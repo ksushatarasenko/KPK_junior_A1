@@ -418,6 +418,7 @@ th {
    display: flex;
    flex-direction: column;
 }
+/* interactive */
 .question{
    margin: 3%;
    width: 100%;
@@ -436,6 +437,9 @@ label{
 .line_1{
    width: 100px;
 }
+.line_3{
+   width: 300px;
+}
 .dialog{
    width: 100%;
 }
@@ -451,4 +455,63 @@ button{
    font-size: 18px;
    margin: 4% auto;
    cursor: pointer;
+}
+.correct {
+   background-color: green;
+   color: white;
+}
+
+.incorrect {
+   background-color: red;
+   color: white;
+}
+
+.options {
+   display: flex;
+   gap: 1px;
+   /* Разрыв между вариантами */
+   font-size: 24px;
+
+}
+
+.option {
+   cursor: pointer;
+   margin-top: 3%;
+}
+
+.selected {
+   text-decoration: underline;
+}
+
+.question {
+   margin-top: 2%;
+}
+
+.questions {
+   margin-bottom: 5%;
+}
+
+input {
+   font-size: 22px;
+   /* Увеличенный размер шрифта */
+   width: 40px;
+   /* Ширина поля ввода */
+   text-align: center;
+   /* Текст по центру */
+}
+
+/* end interactive */
+/* radio label */
+.task {
+   margin-bottom: 20px;
+}
+.task img {
+   display: block;
+   margin-bottom: 10px;
+   width: 450px; /* Примерный размер, можете изменить */
+   height: auto;
+}
+.options {
+   display: flex;
+   gap: 10px;
 }

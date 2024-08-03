@@ -7,49 +7,15 @@
     <title>Lesson №2D</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .correct {
-            background-color: green;
-            color: white;
-        }
-
-        .incorrect {
-            background-color: red;
-            color: white;
-        }
-
-        .options {
+        .box{
             display: flex;
-            gap: 1px;
-            /* Разрыв между вариантами */
-            font-size: 24px;
-            
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: space-evenly;
         }
 
-        .option {
-            cursor: pointer;
-            margin-top: 2%;
-        }
 
-        .selected {
-            text-decoration: underline;
-        }
-
-        .question {
-            margin-top: -5%;
-        }
-
-        .questions {
-            margin-bottom: 5%;
-        }
-
-        input {
-            font-size: 22px;
-            /* Увеличенный размер шрифта */
-            width: 40px;
-            /* Ширина поля ввода */
-            text-align: center;
-            /* Текст по центру */
-        }
     </style>
 </head>
 
@@ -112,7 +78,7 @@
                                 <p class="p">j. mały ≠ <input type="text" data-answer="duży" class="line_1"></p>
                             </div>
                         </div>
-                        <button onclick="checkAnswers('set1')">Check</button>
+                        <button onclick="checkAnswers('set1')">Sprawdź odpowiedzi</button>
                     </div>
                 </div>
             </div>
@@ -122,10 +88,11 @@
                 <div class="questions">
                     <div class="two_1">
                         <div>
-                            <div >
+                            <div>
                                 <div class="options italic blue">
                                     <div class="option" data-index="0">a. nowy | </div>
-                                    <div class="option" data-index="1" style="text-decoration: underline;"> &nbsp;niebieski | </div>
+                                    <div class="option" data-index="1" style="text-decoration: underline;">
+                                        &nbsp;niebieski | </div>
                                     <div class="option" data-index="2">&nbsp;stary </div>
                                 </div>
                             </div>
@@ -167,101 +134,264 @@
                         </div>
                     </div>
                 </div>
-                <button id="checkAnswers">Проверить ответы</button>
+                <button id="checkAnswers">Sprawdź odpowiedzi</button>
             </div>
 
             <!-- 4 -->
-            <h2>4. Prosze postuchac ipowtórzy. Kolory.</h2>
-            <div class="image">
-                <audio src="./audio/037.mp3" controls>audio 037</audio>
-                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127141&authkey=%21AAMQhE-pyWhBZrc"
-                    alt="502C4" style="width: 650px;height: 500px;">
+            <h2>4. Prosze uzupetnic.</h2>
+            <div class="question-set" id="set2">
+                <table>
+                    <tr>
+                        <td><audio src="./audio/040.mp3" controls>audio 040</audio></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>A. stary | fajny | dobry</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Denis:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Cześć, Artem. Co u ciebie?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Artem:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Cześć, wszystko w porządku. A u ciebie?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Denis:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Wszystko dobrze. Ale <span class="blue">fa</span>j<span
+                                    class="blue">ny</span> aparat!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Artem:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Dziękuję. Jest <input type="text" data-answer="s"><input type="text"
+                                    data-answer="t"><input type="text" data-answer="a">r<input type="text"
+                                    data-answer="y">, ale bardzo <input type="text" data-answer="d"><input type="text"
+                                    data-answer="o">b<input type="text" data-answer="r"><input type="text"
+                                    data-answer="y">. Robi ładane zdjęcia.</p>
+                        </td>
+                    </tr>
+                    <!-- B dialog -->
+                    <tr>
+                        <td><audio src="./audio/041.mp3" controls>audio 040</audio></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>B. drogi | ładny | nowy | nowy</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Emma:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Toru, czy to jest twój <input type="text" data-answer="n"><input
+                                    type="text" data-answer="o"><input type="text" data-answer="w">y zegarek?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Toru:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Tak, ten zegadek jest <input type="text" data-answer="n">o<input
+                                    type="text" data-answer="w"><input type="text" data-answer="y"> i <input type="text"
+                                    data-answer="d">r<input type="text" data-answer="o"><input type="text"
+                                    data-answer="g"><input type="text" data-answer="i"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Emma:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Jest bardzo <input type="text" data-answer="ł"><input type="text"
+                                    data-answer="a"><input type="text" data-answer="d">n<input type="text"
+                                    data-answer="y">.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Toru:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Dziękuję.</p>
+                        </td>
+                    </tr>
+                    <!-- C dialog -->
+                    <tr>
+                        <td><audio src="./audio/042.mp3" controls>audio 040</audio></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>C. ładny | brzydka | fajny | duża</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Anastasija: </p>
+                        </td>
+                        <td>
+                            <p class="italic">Fuj! James, co to jest?!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">James:</p>
+                        </td>
+                        <td>
+                            <p class="italic">To jest żaba. Ma na imię Gordon.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Anastasija: </p>
+                        </td>
+                        <td>
+                            <p class="italic">Ta żaba jest <input type="text" data-answer="d">u<input type="text"
+                                    data-answer="ż"><input type="text" data-answer="a"> i <input type="text"
+                                    data-answer="b"><input type="text" data-answer="r"><input type="text"
+                                    data-answer="z">y<input type="text" data-answer="d"><input type="text"
+                                    data-answer="k"><input type="text" data-answer="a"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">James:</p>
+                        </td>
+                        <td>
+                            <p class="italic">To prawda, Gordon nie jest <input type="text" data-answer="ł"><input
+                                    type="text" data-answer="a">d<input type="text" data-answer="n"><input type="text"
+                                    data-answer="y">, ale jest bardzo <input type="text" data-answer="f"><input
+                                    type="text" data-answer="a"><input type="text" data-answer="j"><input type="text"
+                                    data-answer="n">y.</p>
+                        </td>
+                    </tr>
+                    <!-- D dialog -->
+                    <tr>
+                        <td><audio src="./audio/043.mp3" controls>audio 040</audio></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>D. duża | fajny | drogi | tania | elegancka | ładna | mały</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Clara:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Ojej, jaka <input type="text" data-answer="e"><input type="text"
+                                    data-answer="l"><input type="text" data-answer="e">g<input type="text"
+                                    data-answer="a"><input type="text" data-answer="n"><input type="text"
+                                    data-answer="s"><input type="text" data-answer="k"><input type="text"
+                                    data-answer="a"> torba!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Elena:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Dzękuję. Ta torba jest <input type="text" data-answer="ł"><input
+                                    type="text" data-answer="a">d<input type="text" data-answer="n"><input type="text"
+                                    data-answer="a">, <input type="text" data-answer="d"><input type="text"
+                                    data-answer="u"><input type="text" data-answer="ż">a i <input type="text"
+                                    data-answer="t"><input type="text" data-answer="a">n<input type="text"
+                                    data-answer="i"><input type="text" data-answer="a">. Clara, ty masz bardzo <input
+                                    type="text" data-answer="f">a<input type="text" data-answer="j"><input type="text"
+                                    data-answer="n"><input type="text" data-answer="y"> plecak.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="green">Clara:</p>
+                        </td>
+                        <td>
+                            <p class="italic">Mój plecak jest <input type="text" data-answer="m">u<input type="text"
+                                    data-answer="a">ł<input type="text" data-answer="y">, ale <input type="text"
+                                    data-answer="d">r<input type="text" data-answer="o"><input type="text"
+                                    data-answer="g"><input type="text" data-answer="i">.</p>
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="checkAnswers('set2')">Sprawdź</button>
             </div>
             <!-- 5 -->
-            <h2>5. Jaki to kolor?</h2>
-            <div class="question-set" id="set1">
-                <div class="dialog italic">
-                    <div class="colors">
-                        <div class="colorGr"></div>
-                        <p class="p">z<span class="red">i</span>e<span class="red">l</span><span class="red">o</span>na
-                            tablica.</p>
-                    </div>
-                    <div class="colors">
-                        <div class="colorBr"></div>
-                        <p class="p"><input type="text" data-answer="b">r<input type="text" data-answer="ą"><input
-                                type="text" data-answer="z">o<input type="text" data-answer="w">y piórnik.</p>
-                    </div>
-                    <div class="colors">
-                        <div class="colorR"></div>
-                        <p class="p"><input type="text" data-answer="c">z<input type="text" data-answer="e">r<input
-                                type="text" data-answer="w">ony kubek.</p>
-                    </div>
-                    <div class="colors">
-                        <div class="colorYe"></div>
-                        <p class="p">Ż<input type="text" data-answer="ó"><input type="text" data-answer="ł">ta lampa.
-                        </p>
-                    </div>
-                    <div class="colors">
-                        <div class="colorB"></div>
-                        <p class="p">n<input type="text" data-answer="i">e<input type="text" data-answer="b"><input
-                                type="text" data-answer="i">esk<input type="text" data-answer="i">e akwarium.</p>
-                    </div>
-                    <div class="colors">
-                        <div class="colorPom"></div>
-                        <p class="p">po<input type="text" data-answer="m">a<input type="text" data-answer="r">a<input
-                                type="text" data-answer="ń">c<input type="text" data-answer="z">owy zeszyt.</p>
-                    </div>
-                </div>
-                <button onclick="checkAnswers('set1')">Check</button>
+            <h2>5. Co to jest?</h2>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127151&authkey=%21AKV2WLBiQbhIIS4&width=2048&height=648"
+                    alt="502D5">
             </div>
-
-            <!-- konec 5 -->
             <!-- 6 -->
-            <h2>6. Jaki? Jaka? Jakie? Czyj? Czyja? Czyje?</h2>
+            <h2>6. Jaki? Jaka? Jakie?</h2>
             <div class="video">
                 <iframe style="max-width:100%"
-                    src="https://wordwall.net/uk/embed/17a64f2c0d7347df9f62233cbf7f5179?themeId=62&templateId=2&fontStackId=0"
+                    src="https://wordwall.net/pl/embed/a9f5f214055a4962a3851ae9eabb6e66?themeId=46&templateId=2&fontStackId=0"
                     frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="image">
-                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127142&authkey=%21AK7u2-NZ7qMbd2g&width=2040&height=2120"
-                    alt="502C11">
-            </div>
             <!-- 7 -->
-            <h2>7. Co to jest i jaki ma kolor?</h2>
-            <div class="image">
-                <div class="two">
-                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127143&authkey=%21AJ--oPdM5JD3GNQ&width=1534&height=1124"
-                        alt="502C7" style="width: 500px;height: 250px;">
-                    <div class="question-set" id="set2">
-                        <div class="dialog italic">
-                            <div class="colors">
-                                <p class="p italic">a. Ten kosz jest bialy.</p>
-                            </div>
-                            <div class="colors">
-                                <p class="p">b. <input type="text" data-answer="Ten zeszyt jest niebieski"
-                                        class="line">.</p>
-                            </div>
-                            <div class="colors">
-                                <p class="p">c. <input type="text" data-answer="Ta gumka jest róŻowa" class="line">.</p>
-                            </div>
-                            <div class="colors">
-                                <p class="p">d. <input type="text" data-answer="Ten kubek jest pomarańczowy"
-                                        class="line">.</p>
-                            </div>
-                            <div class="colors">
-                                <p class="p">e. <input type="text" data-answer="Ten ołówek jest czerwony" class="line">.
-                                </p>
-                            </div>
-                            <div class="colors">
-                                <p class="p">f. <input type="text" data-answer="To krzeslo jest zielone" class="line">.
-                                </p>
-                            </div>
-                        </div>
-                        <button onclick="checkAnswers('set2')">Check</button>
-                    </div>
+            <h2>7. Prosze uzupetnic stówkami z tabelki.</h2>
+            <p class="p">sympatyczny | inteligentny | zestresowana | ambitny | skomplikowane | modna | małe | stare</p>
+
+            <div class="question-set question" id="set3">
+
+                <div class="italic">
+                    <p class="p">a. <input type="text" data-answer="sympatyczny" class="line"> uczeń</p>
                 </div>
+                <div class="italic">
+                    <p class="p">b. <input type="text" data-answer="modna" class="line"> kobieta</p>
+                </div>
+                <div class="italic">
+                    <p class="p">c. <input type="text" data-answer="małe" class="line"> dziecko</p>
+                </div>
+                <div class="italic">
+                    <p class="p">d. <input type="text" data-answer="stare" class="line"> auto</p>
+                </div>
+                <button onclick="checkAnswers('set3')">Sprawdź</button>
             </div>
+            <!-- 8 -->
+            <h2>Proszę porównać obrazki (8 różnic).[502D8]|</h2>
+            <div class="two">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127152&authkey=%21AD4Z5t3JHNUBTRg&width=1334&height=1170" alt="502D8A">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127153&authkey=%21ANP4PaotoK2myoE&width=1318&height=1160" alt="502D8B">
+            </div>
+            <!-- 9 -->
+            <div class="box">
+                <span>1. <audio src="./audio/044.mp3" controls>audio 044</audio></span>
+                <span>2. <audio src="./audio/045_t41_2.mp3" controls>audio 044</audio></span>
+                <span>3. <audio src="./audio/046_t41_3.mp3" controls>audio 044</audio></span>
+                <span>4. <audio src="./audio/047_t41_4.mp3" controls>audio 044</audio></span>
+                <span>5. <audio src="./audio/048_t41_5.mp3" controls>audio 044</audio></span>
+            </div>
+             
+             <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127154&authkey=%21AE8LE3jtPKmW4TA&width=1676&height=1644" alt="502D9">
+             </div>
+            <!-- SCRIPT -->
 
             <script>
 
