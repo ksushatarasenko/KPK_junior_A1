@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №2B</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            gap: -1px;
+            /* Разрыв между вариантами */
+            font-size: 24px;
+        }
+
+        .option {
+            cursor: pointer;
+        }
+
+        .selected {
+            text-decoration: underline;
+        }
+
+        .question {
+            margin-top: -5%;
+        }
+
+        .questions {
+            margin-bottom: 5%;
+        }
+
+        input {
+            font-size: 24px;
+            /* Увеличенный размер шрифта */
+            width: 40px;
+            /* Ширина поля ввода */
+            text-align: center;
+            /* Текст по центру */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 - 2</h1>
+            <h2>B - Ten ołówek czy tamten?</h2>
+            <h3>rzeczownik: podział na radzaje <br> ten,ta,to</h3>
+            <!-- 1 -->
+            <h2>Prosze uzupetnic.</h2>
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/pl/embed/49cbdeedb0d948098461c6bfbfa48917?themeId=1&templateId=2&fontStackId=0"
+                    width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <!--  -->
+            <div class="two">
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127130&authkey=%21ALGhniJG479cNkQ&width=700&height=400"
+                        alt="502B7">
+                </div>
+                <audio src="./audio/035.mp3" controls>audio 035</audio>
+            </div>
+            <!-- 2 -->
+            <h2>2. Prosze zakrestic: ten, ta lub to. [502B2]</h2>
+            <div class="questions">
+                <div class="two_1">
+                    <div>
+                        <div class="question" data-correct="0">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>słownik</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>czapka</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="2">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>drzewo</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>żaba</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="2">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>kino</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="question" data-correct="2">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>zdjęcie</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>plecak</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>kredka</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>kosz</div>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="2">
+                            <div class="options">
+                                <div class="option" data-index="0">ten | </div>
+                                <div class="option" data-index="1">ta | </div>
+                                <div class="option" data-index="2">to - </div>
+                                <div>ćwiczenie</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="checkAnswers">Проверить ответы</button>
+            <!-- konec 2 -->
+            <!-- podzial rodzaje -->
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127132&authkey=%21ABdwKTc_hUHcVRs&width=4270&height=1714" alt="502B8">
+            </div>
+             <!-- pravilo -->
+           
+            <h2>4. Ten, ta, to <br> czy tamten, tamta, tamto? [502B3]</h2>
+            <div class="infoText">
+                <div class="pravilo">
+                    <p>В польском языке слова "ten", "ta", "to" и "tamten", "tamta", "tamto" используются для указания на предметы и людей и соответствуют английским "this" и "that". Они изменяются в зависимости от рода и числа существительного, к которому относятся.</p>
+                    <h4>"Ten", "ta", "to" (этот, эта, это):</h4>
+                 </div>
+                <ul>
+                    <li>Ten — используется для мужского рода (он): ten kot (этот кот).</li>
+                    <li>Ta — используется для женского рода (она): ta książka (эта книга).</li>
+                    <li>To — используется для среднего рода (оно): to dziecko (этот ребенок).</li>
+                </ul>
+                <h4>"Tamten", "tamta", "tamto" (тот, та, то):</h4>
+                <ul>
+                    <li>Tamten — используется для мужского рода (он): tamten kot (тот кот).</li>
+                    <li>Tamta — используется для женского рода (она): tamta książka (та книга).</li>
+                    <li>Tamto — используется для среднего рода (оно): tamto dziecko (тот ребенок).</li>
+                </ul>
+                <h4>Примеры:</h4>
+                <div class="two_1">
+                    <ul>
+                        <li>Ten pies jest duży. (Этот пес большой.)</li>
+                        <li>Ta kobieta jest piękna. (Эта женщина красивая.)</li>
+                        <li>To okno jest otwarte. (Это окно открыто.)</li>
+                    </ul>
+                    <ul>
+                        <li>Tamten dom jest stary. (Тот дом старый.)</li>
+                        <li>Tamta szkoła jest nowa. (Та школа новая.)</li>
+                        <li>Tamto auto jest szybkie. (Та машина быстрая.)</li>
+                    </ul>
+                </div>
+                <h4>Сравнение:</h4>
+                <ul>
+                    <li>Ten и Tamten (этот и тот) используются для различения объектов, которые находятся ближе или дальше от говорящего:</li>
+                    <ul>
+                        <li>Ten kot jest tutaj, a tamten kot jest tam. (Этот кот здесь, а тот кот там.)</li>
+                    </ul>
+                </ul>
+                <p>В польском языке важно учитывать род существительного, так как он определяет форму указательного местоимения.</p>
+            </div>
+            <!-- 3 -->
+            <h2>Ten, ta, to -> <br>czy tamten, tamta, tamto ---> </h2>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127131&authkey=%21AFyy3zUnn4-Zi-4&width=3972&height=602" alt="502B3">
+            </div>
+            <!-- 4 -->
+            <h2>4. On? Опа? Опо? 5(02B4|)</h2>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/b99c2ff6967e46d599c5762bb6987ad7?themeId=22&templateId=2&fontStackId=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/e6b0155ab0574b848410828b5d9a40ca?themeId=45&templateId=2&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- konec 4 -->
+            <!-- 5 - 6 -->
+            <h2>5. Proszę przeczytać i uzupełnić.</h2>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127133&authkey=%21ADGQ9LuqkqbqDuk&width=2262&height=1892" alt="502B5-6">
+            </div>
+
+            <script>
+                
+                // 6
+                function checkAnswers(setId) {
+                    const set = document.getElementById(setId);
+                    const inputs = set.querySelectorAll('input[data-answer]');
+                    inputs.forEach(input => {
+                        const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+                        const userAnswer = input.value.trim().toLowerCase();
+
+                        if (userAnswer === correctAnswer) {
+                            input.classList.add('correct');
+                            input.classList.remove('incorrect');
+                        } else {
+                            input.classList.add('incorrect');
+                            input.classList.remove('correct');
+                        }
+                    });
+                }
+
+                // выбор
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const questions = document.querySelectorAll('.question');
+
+                    questions.forEach(question => {
+                        const options = question.querySelectorAll('.option');
+                        options.forEach(option => {
+                            option.addEventListener('click', () => {
+                                options.forEach(opt => opt.classList.remove('selected'));
+                                option.classList.add('selected');
+                            });
+                        });
+                    });
+
+                    document.getElementById('checkAnswers').addEventListener('click', () => {
+                        questions.forEach(question => {
+                            const correctIndex = question.getAttribute('data-correct');
+                            const selectedOption = question.querySelector('.option.selected');
+                            if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
+                                question.classList.add('correct');
+                                question.classList.remove('incorrect');
+                            } else {
+                                question.classList.add('incorrect');
+                                question.classList.remove('correct');
+                            }
+                        });
+                    });
+                });
+
+            </script>
+
+        </main>
+    </div>
+</body>
+
+</html>

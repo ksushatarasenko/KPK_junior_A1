@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* ====== HEADER ================ */
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+header ul{
+    display: flex;
+    gap: 4%;
+    padding: 2%;
+    list-style-type: none;
+}
+
+.li a{
+    font-size: 24px;
+    color:bisque;
+}
+.ulhead{
+   display: flex;
+   flex-wrap: wrap;
+}
+/* ========= MAIN =============== */
+.main{
+   max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zmist{
+    text-align: left;
+    margin: 5%;
+}
+.rozklad{
+   display: flex;
+   /* gap: 5%; */
+   /* flex-wrap: wrap; */
+   justify-content: space-around;
+   /* width: 100%; */
+}
+.zagolovok{
+   display: flex;
+   justify-content: space-around;
+   width: 1200px;
+}
+.day li{
+   font-size: 20px;
+}
+.voproses{
+   max-width: 90%;
+   padding: 2%;
+}
+
+/* hr {
+   border: 0;
+   height: 1px;
+   background: #333;
+   box-shadow: 0 0 10px 1px #333;
+} */
+/*  ======= TEXT ============= */
+h1{
+    color: blueviolet;
+    font-size: 2em;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: green;
+    font-size: 1.8em;
+}
+h3{
+   font-size: 20px; 
+   margin-top: 2%;
+   color: green;
+   text-align: center;
+}
+h4{
+   font-size: 18px;
+   color: rgb(15, 92, 92);
+}
+.p{
+   font-size: 26px;
+   text-indent: 30px;
+   padding: 1%;
+}
+p{
+   font-size: 18px;
+}
+
+.red{
+   color: red;
+}
+.blue{
+   color: blue;
+}
+.green{
+   color: green;
+}
+.b{
+   font-weight: 900;
+   color: blue;
+}
+.weight{
+   font-weight: 900;
+}
+.italic{
+   font-style: italic;
+}
+.encyklopediaTitle{
+   font-size: 30px;
+   color: rgb(76, 74, 74);
+   font-weight: 600;
+}
+.text{
+   padding: 2%;
+   line-height: 1.5;
+   border: 2px solid gray;
+   border-radius: 20px;
+   margin: 2%;
+   font-size: 34px;
+   text-indent: 60px;
+}
+/* =========== List Lesson ============== */
+ .liLesson a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(16, 66, 66);
+   
+ }
+ .liLesson{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .checkbox{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+ }
+ /* ======================== */
+
+ .two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+ }
+ .two img{
+    max-width: 100%;
+    
+ }
+ .two iframe{
+  width: 100%;
+  height: 100%;
+}
+.two_1{
+   display: flex;
+   gap: 30px;
+}
+ .three{
+    display: flex;
+    align-items: center!important;
+    gap: 2px;
+    padding: 2%;
+    /* width: 1000px; */
+ }
+ .three img{
+    width: 80%;  
+ }
+ .thre p{
+   width: 100%;
+ }
+ hr{
+   border: none;          /* Убираем стандартное оформление */
+   height: 2px;           /* Толщина линии */
+   background-color: rgb(115, 103, 103); /* Цвет линии */
+ }
+ /* ===== FOOTER ========= */
+ footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cornflowerblue;
+ }
+ /* ========= PREZENTATION ============ */
+.prezent ,
+.video {
+    width: 90%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.prezent iframe,
+.video iframe {
+    width: 100%;
+    height: 90%;
+}
+.video video {
+   width: 100%;
+   height: 90%;
+}
+
+.vid{
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   flex-direction: column;
+}
+.vid iframe{
+   width: 600px;
+   height: 350px;
+}
+@media (max-width: 1200px) {
+   .prezent ,
+   .video  {
+      width: 900px; 
+      height: 500px;
+   }
+   .main{
+      width: 80%;
+      margin: 0 auto;
+   }
+
+   .two, .three {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+   }
+   .zagolovok{
+      width: 95%;
+   }
+   
+}
+
+@media (max-width: 768px) {
+   
+   .prezent ,
+   .video  {
+      width: 400px; 
+      height: 250px;
+   }
+
+   .two, .three {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .two img, .three img{
+      width: 90%;
+   }
+}
+/* ============== */
+.plan{
+   width: 1400px;
+   height: 700px;
+}
+.img{
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+.image img{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center;
+   align-items: center; */
+   margin: 0 auto;
+}
+/* ======= IMAGE ========= */
+.image{
+   width: 100%;
+   /* height: 800px; */
+   /* margin: 2%; */
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.image iframe{
+   width: 100%;
+   height: 100%;
+}
+.image img{
+   max-width: 80%;
+}
+
+.zoomable {
+   transition: transform 1.5s ease;
+}
+.zoomable:hover {
+   transform: scale(1.5); 
+}
+.four{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+}
+.four img{
+   width: 100%;
+   height: 200px;
+}
+
+/* Стили для модального окна */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 999;
+   padding-top: 50px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0,0,0,0.9);
+ }
+ 
+ .modal-content {
+   margin: auto;
+   display: block;
+   max-width: 90%;
+   max-height: 90%;
+ }
+ /* InfoText */
+ .infoText{
+   background-color: beige;
+   padding: 2%;
+   font-size: 20px;
+ }
+ .infoText p{
+   margin-top: 2%;
+   font-size: 20px;
+   
+ }
+ .infoText h4{
+   font-size: 24px;
+   text-align: center;
+ }
+ .infoText ul{
+   margin: 10px auto;
+ }
+ .hr{
+   color: green;
+   width: 100%;
+   
+ }
+
+ /* Таблица*/
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+}
+th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+   font-size: 24px;
+}
+th {
+   background-color: #f2f2f2;
+}
+/* answer */
+.answer {
+    display: none;
+}
+.question {
+    margin-bottom: 20px;
+}
+.question button {
+    margin-top: 10px;
+}
+.answ{
+    padding: 0.5%;
+    background-color: rgb(234, 241, 100);
+}
+/* ZADANIE */
+.zadanie{
+   width: 100%;
+   padding: 1%;
+   font-size: 28px;
+   color: rgb(60, 4, 60);
+   display: flex;
+   gap: 5%;
+   justify-content:center;
+}
+
+.zadanie select{
+   background-color: rgb(194, 192, 192);
+   padding: 0.5%;
+}
+.zadacha{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+}
+.question{
+   margin: 3%;
+   width: 100%;
+   font-size: 20px;
+}
+.vopros{
+   font-weight: 800;
+   margin-bottom: 3%;
+}
+label{
+   margin-left: 7%;
+}
+.line{
+   width: 200px;
+}
+.line_1{
+   width: 100px;
+}
+.dialog{
+   width: 100%;
+}
+
+/* div flex */
+.colors{
+   display: flex;
+   width: 500px;
+}
+button{
+   background-color: aquamarine;
+   padding: 1%;
+   font-size: 18px;
+   margin: 4% auto;
+   cursor: pointer;
+}

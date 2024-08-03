@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №2D</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            gap: 1px;
+            /* Разрыв между вариантами */
+            font-size: 24px;
+            
+        }
+
+        .option {
+            cursor: pointer;
+            margin-top: 2%;
+        }
+
+        .selected {
+            text-decoration: underline;
+        }
+
+        .question {
+            margin-top: -5%;
+        }
+
+        .questions {
+            margin-bottom: 5%;
+        }
+
+        input {
+            font-size: 22px;
+            /* Увеличенный размер шрифта */
+            width: 40px;
+            /* Ширина поля ввода */
+            text-align: center;
+            /* Текст по центру */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 - 2</h1>
+            <h2>D - Stare, nowe, kolorowe?</h2>
+            <h3>podstawowe przymiotniki(основные прилагательные); opis przedmiotów</h3>
+            <!-- nowy słowa-->
+            <a href="https://quizlet.com/pl/931437045/02d-stare-nowe-kolorowe-flash-cards/?i=4wzil5&x=1qqt"
+                target="_blank">NOWY SŁOWA >>></a>
+            <!-- 1 -->
+            <h2>Dialog 1</h2>
+            <!-- 1 -->
+            <div class="two">
+                <div>
+                    <audio src="./audio/039.mp3" controls>audio 036</audio>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127150&authkey=%21ACUl-WHNWgvcr7k"
+                        alt="502C1">
+                </div>
+                <!-- 2 -->
+                <div style="margin-top: 25% ;">
+                    <h2>2. Prosze uzupetnic.</h2>
+                    <div class="question-set" id="set1">
+                        <div class="dialog italic">
+                            <div class="colors">
+                                <p class="p">a. brzydki ≠ <span class="blue italic">ładny</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">b. nowa ≠ <input type="text" data-answer="stara" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">c. czyste ≠ <input type="text" data-answer="brudne" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">d. ładna ≠ <input type="text" data-answer="brzydka" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">e. brudna ≠ <input type="text" data-answer="czysta" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">f. długie ≠ <input type="text" data-answer="krótke" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">g. tani ≠ <input type="text" data-answer="drogi" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">h. dobre ≠ <input type="text" data-answer="złe" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">i. ciężka ≠ <input type="text" data-answer="lekka" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">j. mały ≠ <input type="text" data-answer="duży" class="line_1"></p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set1')">Check</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <h2>3. Co nie pasuje?</h2>
+            <div>
+                <div class="questions">
+                    <div class="two_1">
+                        <div>
+                            <div >
+                                <div class="options italic blue">
+                                    <div class="option" data-index="0">a. nowy | </div>
+                                    <div class="option" data-index="1" style="text-decoration: underline;"> &nbsp;niebieski | </div>
+                                    <div class="option" data-index="2">&nbsp;stary </div>
+                                </div>
+                            </div>
+                            <div class="question" data-correct="2">
+                                <div class="options">
+                                    <div class="option" data-index="0">b. zły | </div>
+                                    <div class="option" data-index="1"> &nbsp;dobry | </div>
+                                    <div class="option" data-index="2">&nbsp;duży </div>
+                                </div>
+                            </div>
+                            <div class="question" data-correct="0">
+                                <div class="options">
+                                    <div class="option" data-index="0">c. brzydki | </div>
+                                    <div class="option" data-index="1"> &nbsp;brudny | </div>
+                                    <div class="option" data-index="2">&nbsp;czysty </div>
+                                </div>
+                            </div>
+                            <div class="question" data-correct="1">
+                                <div class="options">
+                                    <div class="option" data-index="0">d. drogi | </div>
+                                    <div class="option" data-index="1"> &nbsp;długi | </div>
+                                    <div class="option" data-index="2">&nbsp;tani </div>
+                                </div>
+                            </div>
+                            <div class="question" data-correct="1">
+                                <div class="options">
+                                    <div class="option" data-index="0">e. ładny | </div>
+                                    <div class="option" data-index="1"> &nbsp;łatwy | </div>
+                                    <div class="option" data-index="2">&nbsp;brzydki </div>
+                                </div>
+                            </div>
+                            <div class="question" data-correct="1">
+                                <div class="options">
+                                    <div class="option" data-index="0">f. mały | </div>
+                                    <div class="option" data-index="1"> &nbsp;miły | </div>
+                                    <div class="option" data-index="2">&nbsp;duży </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="checkAnswers">Проверить ответы</button>
+            </div>
+
+            <!-- 4 -->
+            <h2>4. Prosze postuchac ipowtórzy. Kolory.</h2>
+            <div class="image">
+                <audio src="./audio/037.mp3" controls>audio 037</audio>
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127141&authkey=%21AAMQhE-pyWhBZrc"
+                    alt="502C4" style="width: 650px;height: 500px;">
+            </div>
+            <!-- 5 -->
+            <h2>5. Jaki to kolor?</h2>
+            <div class="question-set" id="set1">
+                <div class="dialog italic">
+                    <div class="colors">
+                        <div class="colorGr"></div>
+                        <p class="p">z<span class="red">i</span>e<span class="red">l</span><span class="red">o</span>na
+                            tablica.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorBr"></div>
+                        <p class="p"><input type="text" data-answer="b">r<input type="text" data-answer="ą"><input
+                                type="text" data-answer="z">o<input type="text" data-answer="w">y piórnik.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorR"></div>
+                        <p class="p"><input type="text" data-answer="c">z<input type="text" data-answer="e">r<input
+                                type="text" data-answer="w">ony kubek.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorYe"></div>
+                        <p class="p">Ż<input type="text" data-answer="ó"><input type="text" data-answer="ł">ta lampa.
+                        </p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorB"></div>
+                        <p class="p">n<input type="text" data-answer="i">e<input type="text" data-answer="b"><input
+                                type="text" data-answer="i">esk<input type="text" data-answer="i">e akwarium.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorPom"></div>
+                        <p class="p">po<input type="text" data-answer="m">a<input type="text" data-answer="r">a<input
+                                type="text" data-answer="ń">c<input type="text" data-answer="z">owy zeszyt.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set1')">Check</button>
+            </div>
+
+            <!-- konec 5 -->
+            <!-- 6 -->
+            <h2>6. Jaki? Jaka? Jakie? Czyj? Czyja? Czyje?</h2>
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/17a64f2c0d7347df9f62233cbf7f5179?themeId=62&templateId=2&fontStackId=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127142&authkey=%21AK7u2-NZ7qMbd2g&width=2040&height=2120"
+                    alt="502C11">
+            </div>
+            <!-- 7 -->
+            <h2>7. Co to jest i jaki ma kolor?</h2>
+            <div class="image">
+                <div class="two">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127143&authkey=%21AJ--oPdM5JD3GNQ&width=1534&height=1124"
+                        alt="502C7" style="width: 500px;height: 250px;">
+                    <div class="question-set" id="set2">
+                        <div class="dialog italic">
+                            <div class="colors">
+                                <p class="p italic">a. Ten kosz jest bialy.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">b. <input type="text" data-answer="Ten zeszyt jest niebieski"
+                                        class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">c. <input type="text" data-answer="Ta gumka jest róŻowa" class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">d. <input type="text" data-answer="Ten kubek jest pomarańczowy"
+                                        class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">e. <input type="text" data-answer="Ten ołówek jest czerwony" class="line">.
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">f. <input type="text" data-answer="To krzeslo jest zielone" class="line">.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set2')">Check</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+
+                // 6
+                function checkAnswers(setId) {
+                    const set = document.getElementById(setId);
+                    const inputs = set.querySelectorAll('input[data-answer]');
+                    inputs.forEach(input => {
+                        const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+                        const userAnswer = input.value.trim().toLowerCase();
+
+                        if (userAnswer === correctAnswer) {
+                            input.classList.add('correct');
+                            input.classList.remove('incorrect');
+                        } else {
+                            input.classList.add('incorrect');
+                            input.classList.remove('correct');
+                        }
+                    });
+                }
+
+                // выбор
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const questions = document.querySelectorAll('.question');
+
+                    questions.forEach(question => {
+                        const options = question.querySelectorAll('.option');
+                        options.forEach(option => {
+                            option.addEventListener('click', () => {
+                                options.forEach(opt => opt.classList.remove('selected'));
+                                option.classList.add('selected');
+                            });
+                        });
+                    });
+
+                    document.getElementById('checkAnswers').addEventListener('click', () => {
+                        questions.forEach(question => {
+                            const correctIndex = question.getAttribute('data-correct');
+                            const selectedOption = question.querySelector('.option.selected');
+                            if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
+                                question.classList.add('correct');
+                                question.classList.remove('incorrect');
+                            } else {
+                                question.classList.add('incorrect');
+                                question.classList.remove('correct');
+                            }
+                        });
+                    });
+                });
+
+            </script>
+
+        </main>
+    </div>
+</body>
+
+</html>

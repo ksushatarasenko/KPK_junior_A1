@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №2C</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            gap: -1px;
+            /* Разрыв между вариантами */
+            font-size: 24px;
+        }
+
+        .option {
+            cursor: pointer;
+        }
+
+        .selected {
+            text-decoration: underline;
+        }
+
+        .question {
+            margin-top: -5%;
+        }
+
+        .questions {
+            margin-bottom: 5%;
+        }
+
+        input {
+            font-size: 24px;
+            /* Увеличенный размер шрифта */
+            width: 40px;
+            /* Ширина поля ввода */
+            text-align: center;
+            /* Текст по центру */
+        }
+
+        .colorB {
+            width: 100px;
+            height: 35px;
+            background-color: blue;
+        }
+
+        .colorGr {
+            width: 100px;
+            height: 35px;
+            background-color: green;
+        }
+
+        .colorBr {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(74, 30, 30);
+        }
+
+        .colorR {
+            width: 100px;
+            height: 35px;
+            background-color: red;
+        }
+
+        .colorYe {
+            width: 100px;
+            height: 35px;
+            background-color: yellow;
+        }
+
+        .colorPom {
+            width: 100px;
+            height: 35px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 - 2</h1>
+            <h2>С - Czy to jest czerwone jabłko?</h2>
+            <h3>kolory; Czy to jest ...?; jaki? jaka? jake?</h3>
+            <!-- 1 -->
+            <h2>Dialog 1</h2>
+            <!-- 1 - 2-->
+            <div class="two">
+                <div>
+                    <audio src="./audio/036.mp3" controls>audio 036</audio>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127135&authkey=%21ACr5tu36of1HgLw&width=1100&height=750"
+                        alt="502C1">
+                </div>
+                <div>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127137&authkey=%21AJTxYvIfGhO49s4&width=2350&height=1572"
+                        alt="502">
+                </div>
+            </div>
+            <div class="two">
+                <div class="image">
+                    <h2>1. Prosze uzupetnic.</h2>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127138&authkey=%21AD3uazFWBBRQqtc&width=1130&height=1850"
+                        alt="502C1-1">
+                </div>
+                <div>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127139&authkey=%21AFzDjoqoSf9WX6Y&width=1982&height=1912"
+                        alt="502C2">
+                </div>
+            </div>
+            <!-- 3 -->
+            <h2>Prosze utozyé zdania.</h2>
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/pl/embed/d2226a96dac1441bbfa0af6611d78a12?themeId=45&templateId=72&fontStackId=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- 4 -->
+            <h2>4. Prosze postuchac ipowtórzy. Kolory.</h2>
+            <div class="image">
+                <audio src="./audio/037.mp3" controls>audio 037</audio>
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127141&authkey=%21AAMQhE-pyWhBZrc"
+                    alt="502C4" style="width: 650px;height: 500px;">
+            </div>
+            <!-- 5 -->
+            <h2>5. Jaki to kolor?</h2>
+            <div class="question-set" id="set1">
+                <div class="dialog italic">
+                    <div class="colors">
+                        <div class="colorGr"></div>
+                        <p class="p">z<span class="red">i</span>e<span class="red">l</span><span class="red">o</span>na
+                            tablica.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorBr"></div>
+                        <p class="p"><input type="text" data-answer="b">r<input type="text" data-answer="ą"><input
+                                type="text" data-answer="z">o<input type="text" data-answer="w">y piórnik.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorR"></div>
+                        <p class="p"><input type="text" data-answer="c">z<input type="text" data-answer="e">r<input
+                                type="text" data-answer="w">ony kubek.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorYe"></div>
+                        <p class="p">Ż<input type="text" data-answer="ó"><input type="text" data-answer="ł">ta lampa.
+                        </p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorB"></div>
+                        <p class="p">n<input type="text" data-answer="i">e<input type="text" data-answer="b"><input
+                                type="text" data-answer="i">esk<input type="text" data-answer="i">e akwarium.</p>
+                    </div>
+                    <div class="colors">
+                        <div class="colorPom"></div>
+                        <p class="p">po<input type="text" data-answer="m">a<input type="text" data-answer="r">a<input
+                                type="text" data-answer="ń">c<input type="text" data-answer="z">owy zeszyt.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set1')">Check</button>
+            </div>
+
+            <!-- konec 5 -->
+            <!-- 6 -->
+            <h2>6. Jaki? Jaka? Jakie? Czyj? Czyja? Czyje?</h2>
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/17a64f2c0d7347df9f62233cbf7f5179?themeId=62&templateId=2&fontStackId=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127142&authkey=%21AK7u2-NZ7qMbd2g&width=2040&height=2120"
+                    alt="502C11">
+            </div>
+            <!-- 7 -->
+            <h2>7. Co to jest i jaki ma kolor?</h2>
+            <div class="image">
+                <div class="two">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127143&authkey=%21AJ--oPdM5JD3GNQ&width=1534&height=1124"
+                        alt="502C7" style="width: 500px;height: 250px;">
+                    <div class="question-set" id="set2">
+                        <div class="dialog italic">
+                            <div class="colors">
+                                <p class="p italic">a. Ten kosz jest bialy.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">b. <input type="text" data-answer="Ten zeszyt jest niebieski" class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">c. <input type="text" data-answer="Ta gumka jest róŻowa" class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">d. <input type="text" data-answer="Ten kubek jest pomarańczowy" class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">e. <input type="text" data-answer="Ten ołówek jest czerwony" class="line">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p">f. <input type="text" data-answer="To krzeslo jest zielone" class="line">.</p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set2')">Check</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+
+                // 6
+                function checkAnswers(setId) {
+                    const set = document.getElementById(setId);
+                    const inputs = set.querySelectorAll('input[data-answer]');
+                    inputs.forEach(input => {
+                        const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+                        const userAnswer = input.value.trim().toLowerCase();
+
+                        if (userAnswer === correctAnswer) {
+                            input.classList.add('correct');
+                            input.classList.remove('incorrect');
+                        } else {
+                            input.classList.add('incorrect');
+                            input.classList.remove('correct');
+                        }
+                    });
+                }
+
+                // выбор
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const questions = document.querySelectorAll('.question');
+
+                    questions.forEach(question => {
+                        const options = question.querySelectorAll('.option');
+                        options.forEach(option => {
+                            option.addEventListener('click', () => {
+                                options.forEach(opt => opt.classList.remove('selected'));
+                                option.classList.add('selected');
+                            });
+                        });
+                    });
+
+                    document.getElementById('checkAnswers').addEventListener('click', () => {
+                        questions.forEach(question => {
+                            const correctIndex = question.getAttribute('data-correct');
+                            const selectedOption = question.querySelector('.option.selected');
+                            if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
+                                question.classList.add('correct');
+                                question.classList.remove('incorrect');
+                            } else {
+                                question.classList.add('incorrect');
+                                question.classList.remove('correct');
+                            }
+                        });
+                    });
+                });
+
+            </script>
+
+        </main>
+    </div>
+</body>
+
+</html>
