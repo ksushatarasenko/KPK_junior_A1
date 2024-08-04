@@ -139,6 +139,9 @@ p{
    font-size: 34px;
    text-indent: 60px;
 }
+.text20 input{
+   font-size: 20px;
+}
 /* =========== List Lesson ============== */
  .liLesson a{
     font-size: 20px;
@@ -448,6 +451,8 @@ label{
 .colors{
    display: flex;
    width: 500px;
+   gap: 2px;
+   margin-top: 3px;
 }
 button{
    background-color: aquamarine;
