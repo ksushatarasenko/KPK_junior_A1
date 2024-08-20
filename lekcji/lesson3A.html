@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №3A</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 <br> 3</h1>
+            <h2>A - Tydzien ma siedem dni. </h2>
+            <h3>zaimki dzierzawcze: mój, twój, jego, jej<br> Jaki jest twój plan lekcji i ulubiony przedmiot?</h3>
+            <!-- 1 -->
+            <h2>1. Prosze podpisać zeszyty. [503A1]</h2>
+            <h3>503A1</h3>
+            <div>
+                <audio src="./audio/051.mp3" controls>051</audio>
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131018&authkey=%21AK3gYyS41GS5PDU&width=2012&height=778"
+                        alt="503A1">
+                </div>
+            </div>
+            <div class="two">
+                <div class="question-set" id="set1">
+                    <div class="dialog italic ">
+                        <div class="colors">
+                            <p class="p italic blue">a. plastyka</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">b. <input type="text" data-answer="przyroda" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">c. <input type="text" data-answer="język angelski" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">d. <input type="text" data-answer="matematyka" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">e. <input type="text" data-answer="historia" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">f. <input type="text" data-answer="język polski" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">g. <input type="text" data-answer="informatyka" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p">h. <input type="text" data-answer="wychowanie fizyczne(WF)" class="line">.</p>
+                        </div>
+                        <div class="colors">
+                            <p class="p italic blue">i. muzyka</p>
+                        </div>
+                    </div>
+                    <button onclick="checkAnswers('set1')">Check</button>
+                </div>
+                <div class="p">
+                    <p>muzyka</p>
+                    <p>język polski</p>
+                    <p>język angelski</p>
+                    <p>plastyka</p>
+                    <p>matematyka</p>
+                    <p>historia</p>
+                    <p>przyroda</p>
+                    <p>wychowanie fizyczne(WF)</p>
+                    <p>informatyka</p>
+                </div>
+            </div>
+            <hr>
+            <!-- 2 -->
+            <h2>2. Jaki kolor ma ten zeszyt? [503A2]</h2>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131018&authkey=%21AK3gYyS41GS5PDU&width=2012&height=778"
+                    alt="503A1">
+            </div>
+            <div class="question-set" id="set2">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p italic "><span class="blue">1. Różowy</span> zeszyt to muzyka.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">2. <input type="text" data-answer="Czerwony" class="line"> zeszyt to język polski.
+                        </p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">3. <input type="text" data-answer="Niebieski" class="line"> zeszyt to język
+                            angelski.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">4. <input type="text" data-answer="Zielony" class="line"> zeszyt to przyroda.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">5. <input type="text" data-answer="Biały" class="line"> zeszyt to informatyka.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">6. <input type="text" data-answer="Czarny" class="line"> zeszyt to historia.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">7. <input type="text" data-answer="Żółty" class="line"> zeszyt to matematyka.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">8. <input type="text" data-answer="Pomarańczowy" class="line"> zeszyt to plastyka.
+                        </p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set2')">Check</button>
+            </div>
+
+            <!-- 3 -->
+            <h2>3. Jaki to jest przedmiot szkolny? [503A3]</h2>
+            <div class="question-set" id="set3">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p italic ">1. chaniewowy zifyczne - <span class="blue">wychowanie fizyczne</span></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">2. aminofrytka - <input type="text" data-answer="informatyka" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">3. galikines - <input type="text" data-answer="angelski" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">4. zumyka - <input type="text" data-answer="muzyka" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">5. pykatlas - <input type="text" data-answer="plastyka" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">6. kipsol - <input type="text" data-answer="polski" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">7. rasohiti - <input type="text" data-answer="historia" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">8. amametakty - <input type="text" data-answer="matematyka" class="line">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p">9. radrzopy - <input type="text" data-answer="przyroda" class="line">.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set3')">Check</button>
+            </div>
+            <!-- 4 -->
+            <h2>4. Proszę przeczytać tekst i uzupetnić. [503A4]</h2>
+            <div class="image">
+                <audio src="./audio/052.mp3" controls>052</audio>
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131019&authkey=%21AHf0F9AKqq6witE&width=2260&height=1028"
+                    alt="503A4">
+            </div>
+
+            <div class="question-set" id="set4">
+                <div class="dialog displayFlex">
+                    <div class="raspisanie">
+                        <p class="p">Poniedziałek</p>
+                        <p class="italic blue">1. język polski</p>
+                        <p>2. <input type="text" data-answer="historia" class="line_2"></p>
+                        <p class="italic blue">3. matematyka</p>
+                        <p>4. <input type="text" data-answer="WF" class="line_2"></p>
+                        <p>5.</p>
+                    </div>
+                    <div class="colors raspisanie">
+                        <p class="p">Wtorek</p>
+                        <p class="italic blue">1. język angelski</p>
+                        <p >2. <input type="text" data-answer="język polski" class="line_2"></p>
+                        <p >3. <input type="text" data-answer="muzyka" class="line_2"></p>
+                        <p >4. <input type="text" data-answer="matematyka" class="line_2"></p>
+                        <p >5. <input type="text" data-answer="przyroda" class="line_2"></p>
+                    </div>
+                    <div class="colors raspisanie">
+                        <p class="p">Środa</p>
+                        <p class="italic blue">1. matematyka</p>
+                        <p >2. <input type="text" data-answer="historia" class="line_2"></p>
+                        <p >3. <input type="text" data-answer="informatyka" class="line_2"></p>
+                        <p >4. <input type="text" data-answer="WF" class="line_2"></p>
+                        <p >5. -</p>
+                    </div>
+                    <div class="colors raspisanie">
+                        <p class="p">Czwartek</p>
+                        <p class="italic blue">1. <input type="text" data-answer="język angelski" class="line_2"></p>
+                        <p >2. <input type="text" data-answer="przyroda" class="line_2"></p>
+                        <p >3. <input type="text" data-answer="język polski" class="line_2"></p>
+                        <p >4. <input type="text" data-answer="język polski" class="line_2"></p>
+                        <p >5. <input type="text" data-answer="plastyka" class="line_2"></p>
+                    </div>
+                    <div class="colors raspisanie">
+                        <p class="p">Piątek</p>
+                        <p class="italic blue">1. <input type="text" data-answer="język polski" class="line_2"></p>
+                        <p ><span class="blue italic">2. matematyka</span> </p>
+                        <p >3. <input type="text" data-answer="przyroda" class="line_2"></p>
+                        <p ><span class="blue italic">2. język angelski</span> </p>
+                        <p >5. <input type="text" data-answer="WF" class="line_2"></p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set4')">Check</button>
+            </div>
+        <!-- 5 -->
+        <h2>5. Jaki jest twój ulubiony przedmiot? Prosze napisać i zapytać kolegę. [503A5]</h2>
+        <div class="image">
+            <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131020&authkey=%21AGpE5gSSQZg_9dA&width=1950&height=1930" alt="503A5">
+        </div>
+        <!-- 6 -->
+        <h2>Jaki jest jego/ jej ulubiony przedmiot? [503A6]</h2>
+        <div class="question-set" id="set5">
+            <div class="dialog italic ">
+                <div class="colors">
+                    <p class="italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131021&authkey=%21AH4owlV6YklAHMQ&width=832&height=342" alt="denis" style="width: 170px;height: 60px;"><span class="blue"> Jego ulubiony przedmiot to informatyka.</span></p>
+                </div>
+                <div class="colors">
+                    <p class="p italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131022&authkey=%21AM8Ckr2ihFqDQQg&width=852&height=332" alt="sophie" style="width: 170px;height: 60px;"><input type="text" data-answer="Jej ulubiony przedmiot to muzyka" class="line_3">.</p>
+                </div>
+                <div class="colors">
+                    <p class="p italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131023&authkey=%21AAlA00olKDu3bDc&width=852&height=332" alt="daniel" style="width: 170px;height: 60px;"><input type="text" data-answer="Jego ulubiony przedmiot to matematyka" class="line_3">.</p>
+                </div>
+                <div class="colors">
+                    <p class="italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131024&authkey=%21ACeH3KNzujh5I_g&width=852&height=332" alt="clara" style="width: 170px;height: 60px;"><input type="text" data-answer="Jej ulubiony przedmiot to historia" class="line_3">.</p>
+                </div>
+                <div class="colors">
+                    <p class="p italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131025&authkey=%21AK-cD4pmVImke3M&width=852&height=332" alt="toru" style="width: 170px;height: 60px;"><input type="text" data-answer="Jego ulubiony przedmiot to język angelski" class="line_3">.</p>
+                </div>
+                <div class="colors">
+                    <p class="p italic "><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131026&authkey=%21AL6WYTKLI2UnueA&width=852&height=332" alt="maja" style="width: 170px;height: 60px;"><input type="text" data-answer="Jej ulubiony przedmiot to język polski" class="line_3">.</p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set5')">Check</button>
+        </div>
+        <!-- 8 -->
+        <h2>8. Gdzie tu jest dzien? </h2>
+        <div class="video">
+            <iframe style="max-width:100%" src="https://wordwall.net/pl/embed/6591d0f9cefd434a94f0b317ac259d80?themeId=62&templateId=10&fontStackId=12" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- 9 -->
+        <h2>Prosze preczytać plan lekcji Adama i napisać, kiedy jest ta lekcja. </h2>
+        <p class="p italic">Cześć! Mam na imię Adam, a to jest mój plan. W poniedziałek mam tylko 4 lekcje. Najpierw jest język polski i historia, a potem matematyka i WF. We wtorek mam angielski i polski, jest też muzyka, matematyka i przyroda. Moja nauczycielka od przyrody jest super! :) Środa też jest fajna! Jest matematyka i historia, informatyka i WF. W czwartek mam 5 lekcji. Najpierw angielski i przyroda, ale potem jest dwa razy polski i niestety plastyka :(. Nauczyciel jest fajny, ale plastyka to mój mały koszmar! Piątek jest OK. Znów jest język polski i matematyka. Potem jest przyroda. język angielski i mój ulubiony przedmiot: WF.</p>
+        <div class="two">
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131027&authkey=%21AOdm3xGGHDy5o_M&width=2010&height=1636" alt="503A12">
+            </div>
+            <div class="question-set" id="set6">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="italic ">1. Kiedy jest muzyka?<span class="blue"> Muzyka jest we wtorek.</span></p>
+                    </div>
+                    <div class="colors">
+                        <p class="italic ">2. Kiedy jest informatyka? <input type="text" data-answer="Informatyka jest w środę" class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="italic ">3. Kiedy jest język angielski? <input type="text" data-answer="Język angelski jest we wtorek, w czwartek i w piątek" class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="italic ">4. Kiedy jest plastyka? <input type="text" data-answer="Plastyka jest w czwartek" class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="italic ">5. Kiedy jest historia? <input type="text" data-answer="Historia jest w poniedziałek i w środę" class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="italic ">6. Kiedy jest polski? <input type="text" data-answer="Język polski jest w poniedziałek, we wtorek, w czwartek i w piątek" class="line_3">.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set6')">Check</button>
+            </div>
+        </div>
+    <!-- 10 -->
+    <h2>10. Proszę posłuchać dialogu i napisać,jak to jest dzień. [503A10]</h2>
+    <div class="image">
+        <audio src="./audio/054.mp3" controls>054</audio>
+        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131028&authkey=%21AAnQaSTasUB8EXQ&width=3750&height=954" alt="503A10">
+    </div>
+
+    <script>
+
+        // 6
+        function checkAnswers(setId) {
+            const set = document.getElementById(setId);
+            const inputs = set.querySelectorAll('input[data-answer]');
+            inputs.forEach(input => {
+                const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+                const userAnswer = input.value.trim().toLowerCase();
+
+                if (userAnswer === correctAnswer) {
+                    input.classList.add('correct');
+                    input.classList.remove('incorrect');
+                } else {
+                    input.classList.add('incorrect');
+                    input.classList.remove('correct');
+                }
+            });
+        }
+
+        // выбор
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const questions = document.querySelectorAll('.question');
+
+            questions.forEach(question => {
+                const options = question.querySelectorAll('.option');
+                options.forEach(option => {
+                    option.addEventListener('click', () => {
+                        options.forEach(opt => opt.classList.remove('selected'));
+                        option.classList.add('selected');
+                    });
+                });
+            });
+
+            document.getElementById('checkAnswers').addEventListener('click', () => {
+                questions.forEach(question => {
+                    const correctIndex = question.getAttribute('data-correct');
+                    const selectedOption = question.querySelector('.option.selected');
+                    if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
+                        question.classList.add('correct');
+                        question.classList.remove('incorrect');
+                    } else {
+                        question.classList.add('incorrect');
+                        question.classList.remove('correct');
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    </main>
+    </div>
+</body>
+
+</html>

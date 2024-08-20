@@ -440,8 +440,13 @@ label{
 .line_1{
    width: 100px;
 }
+.line_2{
+   width: 150px;
+   font-size: 16px;
+}
 .line_3{
    width: 300px;
+   font-size: 16px;
 }
 .dialog{
    width: 100%;
@@ -450,7 +455,7 @@ label{
 /* div flex */
 .colors{
    display: flex;
-   width: 500px;
+   width: 600px;
    gap: 2px;
    margin-top: 3px;
 }
@@ -496,6 +501,7 @@ button{
    margin-bottom: 5%;
 }
 
+
 input {
    font-size: 22px;
    /* Увеличенный размер шрифта */
@@ -519,4 +525,15 @@ input {
 .options {
    display: flex;
    gap: 10px;
+}
+
+.raspisanie{
+   display: flex;
+   flex-direction: column;
+   padding: 1%;
+}
+.displayFlex{
+   display: flex;
+   gap: 2px;
+   width: 1200px;
 }
