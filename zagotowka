@@ -1,0 +1,51 @@
+<!-- pole dla wpisania -->
+<div class="question-set" id="set1">
+    <div class="dialog italic ">
+        <div class="colors">
+            <p class="p italic ">A. Lukas, <span class="blue">lubisz</span> surfować po internecie?</p>
+        </div>
+        <div class="colors">
+            <p class="p">B. Tak! Bardzo <input type="text" data-answer="lubię" class="line_1"> grać w gry
+                komputerowe.</p>
+        </div>
+        <div class="colors">
+            <p class="p">C. A wy? Co <input type="text" data-answer="lubicie" class="line_1"> robić?</p>
+        </div>
+        <div class="colors">
+            <p class="p">D. My? Bardzo dużo! <input type="text" data-answer="Lubimy" class="line_1"> czytać
+                książki, słuchać muzyki i rysować.</p>
+        </div>
+    </div>
+    <button onclick="checkAnswers('set1')">Check</button>
+</div>
+<!-- ż -->
+
+<!-- prawda/nieprawda -->
+
+<div class="questions">
+    <div>
+        <div class="options italic">
+            <div class="option">1. Gordon jest z Polski. </div>
+            <div class="option  blue" data-index="0"> &nbsp;P | </div>
+            <div class="option  blue" data-index="1" style="text-decoration: underline;">
+                &nbsp;N </div>
+        </div>
+    </div>
+    <div class="question" data-correct="2">
+        <div class="options">
+            <div class="option">2. Gordon lubi muzykę. </div>
+            <div class="option" data-index="0"> &nbsp;P | </div>
+            <div class="option" data-index="1"> &nbsp;N </div>
+        </div>
+    </div>
+    <div class="question" data-correct="0">
+        <div class="options">
+            <div class="option">3. Gordon lubi robić eksperymenty. </div>
+            <div class="option" data-index="0"> &nbsp;P | </div>
+            <div class="option" data-index="1"> &nbsp;N </div>
+        </div>
+    </div>
+</div>
+<button id="checkAnswers">Sprawdź odpowiedzi</button>
+
+
