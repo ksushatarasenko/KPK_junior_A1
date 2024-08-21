@@ -119,6 +119,10 @@ p{
    font-weight: 900;
    color: blue;
 }
+
+.coral{
+   color: rgb(239, 103, 53);
+}
 .weight{
    font-weight: 900;
 }
@@ -448,6 +452,9 @@ label{
    width: 300px;
    font-size: 16px;
 }
+.line_4{
+   width: 40px;
+}
 .dialog{
    width: 100%;
 }
@@ -455,7 +462,7 @@ label{
 /* div flex */
 .colors{
    display: flex;
-   width: 600px;
+   width: 90%;
    gap: 2px;
    margin-top: 3px;
 }
