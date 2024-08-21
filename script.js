@@ -29,6 +29,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
+// radio label
+                function checkRadio() {
+                    const correctAnswers = {
+                        question1: '1',
+                        question2: '1',
+                        question3: '3',
+                        question4: '3'
+                    };
+
+                    let allCorrect = true;
+
+                    for (const question in correctAnswers) {
+                        const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                        const taskElement = document.querySelector(`input[name="${question}"]`).closest('.task');
+
+                        if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                            taskElement.classList.add('correct');
+                            taskElement.classList.remove('incorrect');
+                        } else {
+                            taskElement.classList.add('incorrect');
+                            taskElement.classList.remove('correct');
+                            allCorrect = false;
+                        }
+                    }
+
+                    if (allCorrect) {
+                        alert("Все ответы верны!");
+                    } else {
+                        alert("Есть ошибки в ответах.");
+                    }
+
+                }
+
     document.getElementById('checkAnswers').addEventListener('click', () => {
         questions.forEach(question => {
             const correctIndex = question.getAttribute('data-correct');
