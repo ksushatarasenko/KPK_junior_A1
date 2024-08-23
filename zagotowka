@@ -46,7 +46,7 @@
         </div>
     </div>
 </div>
-<button id="checkAnswers">Sprawdź odpowiedzi</button>
+<button id="checkAnswers">Sprawdź</button>
 <!-- RADIO -->
  <!-- script -->
  // radio label
@@ -101,5 +101,6 @@
 </div>
 
 <button onclick="checkRadio()">Проверить</button>
+<!--  -->
 
 

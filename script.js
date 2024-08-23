@@ -76,3 +76,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+// кнопка для подсказки
+function toggleHints(hintsId) {
+    var hints = document.getElementById(hintsId);
+    if (hints.style.display === "none") {
+        hints.style.display = "block";
+    } else {
+        hints.style.display = "none";
+    }
+}

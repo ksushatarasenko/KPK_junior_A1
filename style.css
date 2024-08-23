@@ -188,14 +188,17 @@ p{
  .three{
     display: flex;
     align-items: center!important;
-    gap: 2px;
-    padding: 2%;
-    /* width: 1000px; */
+    gap: 1px;
+    padding: 1%;
+    width: 100%;
  }
  .three img{
-    width: 80%;  
+    width: 100%;  
  }
  .thre p{
+   width: 100%;
+ }
+ .three div{
    width: 100%;
  }
  hr{
@@ -213,8 +216,8 @@ p{
  /* ========= PREZENTATION ============ */
 .prezent ,
 .video {
-    width: 90%;
-    height: 50em;
+    width: 80%;
+    height: 40em;
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -385,8 +388,8 @@ p{
 th, td {
    border: 1px solid #ddd;
    padding: 8px;
-   text-align: left;
-   font-size: 24px;
+   text-align: center;
+   font-size: 20px;
 }
 th {
    background-color: #f2f2f2;
@@ -487,13 +490,13 @@ button{
    display: flex;
    gap: 1px;
    /* Разрыв между вариантами */
-   font-size: 24px;
+   font-size: 20px;
 
 }
 
 .option {
    cursor: pointer;
-   margin-top: 3%;
+   margin-top: 2%;
 }
 
 .selected {
