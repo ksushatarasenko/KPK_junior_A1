@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №5D</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 <br> 5</h1>
+            <h2>D - Jak czesto grasz wpitke? </h2>
+            <h3>utrwalenie koniugacji czasowniki: umieć, chcieć, móc, musieć<br> CJak często to robisz?</h3>
+            <!-- nowy słowa-->
+            <a href="https://quizlet.com/pl/935432406/krok-po-kroku-junior-1-5c-flash-cards/?i=4wzil5&x=1jqt"
+                target="_blank">NOWY SŁOWA >>></a>
+            <!-- 1 -->
+            <audio src="./audio/117.mp3" controls>117</audio>
+            <div class="two">
+                <div>
+                    <h2>1. Proszę przeczytać maile i odpowiedzić na pytania. [505D1]</h2>
+                    <div class="question-set" id="set1">
+                        <div class="dialog italic ">
+                            <div class="raspisanie">
+                                <p class="p italic ">1. Jak ma na imię?</p>
+                                <p class="red p20">Ona ma na imię Lisa.</p>
+                                <p class="blue p20">On <input type="text" data-answer="ma na imię Eduardo"
+                                        class="line_3">.</p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">2. Gdzie mieszka?</p>
+                                <p class="red">Ona: <input type="text" data-answer="mieszka w Krakowie" class="line_3">
+                                </p>
+                                <p class="blue">On: <input type="text" data-answer="mieszka w Lizbonie" class="line_3">
+                                </p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">3. Ile masz lat?</p>
+                                <p class="red">Ona: <input type="text" data-answer="14 lat" class="line_3"></p>
+                                <p class="blue">On: <input type="text" data-answer="14 lat" class="line_3"></p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">4. Jaki jest jej/jego ulubiony przedmiot?</p>
+                                <p class="red">Ona: <input type="text" data-answer=" plastyka" class="line_3"></p>
+                                <p class="blue">On: <input type="text" data-answer="informatyka" class="line_3"></p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">5. Co lubi robić?</p>
+                                <p class="red">Ona: <input type="text" data-answer="lubi rysować, malować i muzykę"
+                                        class="line_3"></p>
+                                <p class="blue">On: <input type="text"
+                                        data-answer="lubi surfować po internecie, grać w piłkę nożną" class="line_3">
+                                </p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">6. Co umie robić?</p>
+                                <p class="red">Ona: <input type="text"
+                                        data-answer="umiem dobrze grać na gitarze i śpiewać" class="line_3"></p>
+                                <p class="blue">On: <input type="text"
+                                        data-answer="świetnie gra na gitarze, gra w piłkę nożną" class="line_3"></p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">7. Na jaki kurs chodzi?</p>
+                                <p class="red">Ona: <input type="text" data-answer="chodzi na kurs tańca"
+                                        class="line_3"></p>
+                                <p class="blue">On: <input type="text" data-answer="uczy się polskiego przez internet"
+                                        class="line_3"></p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">8. Czym się interesuje?</p>
+                                <p class="red">Ona: <input type="text"
+                                        data-answer="interesuje się sportem: siatkówka, bieganie, jazda na rolkach, łyżwy, narty"
+                                        class="line_3"></p>
+                                <p class="blue">On: <input type="text"
+                                        data-answer="interesuje się fotografią, piłką nożną" class="line_3"></p>
+                            </div>
+                            <div class="paspisanie">
+                                <p class="p">9. Czy ma rodzeństwo?</p>
+                                <p class="red">Ona: <input type="text" data-answer="ma brata Georga i siostrę Kristi"
+                                        class="line_3"></p>
+                                <p class="blue">On: <input type="text" data-answer="nie ma rodzieństwo" class="line_3">
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set1')">Check</button>
+                        <button onclick="toggleHints('hints1')">Wskazówka</button>
+                        <div id="hints1" style="display: none;">
+                            <div class="two">
+                                <div>
+                                    <p class="p20">1. Jak ma na imię?
+                                    <ul>
+                                        <li>Ona: Ona ma na imię Lisa</li>
+                                        <li>On: On ma na imię Eduardo</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">2. Gdzie mieszka?
+                                    <ul>
+                                        <li>Ona: mieszka w Krakowie</li>
+                                        <li>On: mieszka w Lizbonie</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">3. Ile masz lat?
+                                    <ul>
+                                        <li>Ona: Ona ma 14 lat</li>
+                                        <li>On: On ma 14 lat</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">4. Jaki jest jej/jego ulubiony przedmiot?
+                                    <ul>
+                                        <li>Ona: plastyka</li>
+                                        <li>On: informatyka</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">5. Co lubi robić?
+                                    <ul>
+                                        <li>Ona: lubi rysować i malować, lubi muzykę</li>
+                                        <li>On: lubi surfować po internecie, grać w piłkę nożną</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="p20">6. Co umie robić?
+                                    <ul>
+                                        <li>Ona: umiem dobrze grać na gitarze i śpiewać</li>
+                                        <li>On: świetnie gra na gitarze, gra w piłkę nożną</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">7. Na jaki kurs chodzi?
+                                    <ul>
+                                        <li>Ona: chodzi na kurs tańca</li>
+                                        <li>On: uczy się polskiego przez internet</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">8. Czym się interesuje?
+                                    <ul>
+                                        <li>Ona: interesuje się sportem: siatkówka, bieganie, jazda na rolkach, łyżwy,
+                                            narty</li>
+                                        <li>On: interesuje się fotografią, piłką nożną</li>
+                                    </ul>
+                                    </p>
+                                    <p class="p20">9. Czy ma rodzeństwo?
+                                    <ul>
+                                        <li>Ona: ma brata Georga i siostrę Kristi</li>
+                                        <li>On: nie ma rodzieństwo</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="raspisanie">
+                    <div>
+                        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131175&authkey=%21AOCAXor44uiVUXM&width=386&height=370"
+                            alt="lisa" style="width: 150px;">
+                        <p class="p20">Cześć! <br>
+                            Mam na imię Lisa. Jestem z Norwegii. Mam 14 lat. Teraz mieszkam w Krakowie, bo chodzę na
+                            kurs języka polskiego. Bardzo lubię rysować i malować. Mój ulubiony przedmiot to plastyka.😄
+                            Lubię też muzykę. Umiem dobrze grać na gitarze i śpiewać. W każdy wtorek i czwartek chodzę
+                            na kurs tańca. Interesuję się też sportem. Lubię siatkówkę, ale niestety nie gram zbyt
+                            dobrze.🙁 Latem <span class="weight">zawsze</span>
+                            biegam w parku i <span class="weight">często</span> jeżdżę na rolkach. Zimą <span
+                                class="weight">zwykle</span> jeżdżę na Łyżwach i na nartach, ale <span
+                                class="weight">nigdy</span> nie jeżdżę na snowboardzie - po prostu się boję. Mam brata
+                            Georga i siostrę Kristi. Lubimy razem oglądać filmy, ale <span class="weight">rzadko</span>
+                            chodzimy do kina. <br>
+                            Pozdrawiam <br>
+                            Lisa</p>
+                    </div>
+                    <div>
+                        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131176&authkey=%21AJD_JjwrgFdAhdc&width=386&height=370"
+                            alt="eduardo" style="width: 150px;">
+                        <p class="p20">Cześć Lisa! <br>
+                            Mam na imię Eduardo. Jestem z Portugalii i mieszkam w Lizbonie. Tak jak ty mam 14 lat. Ja
+                            też uczę się polskiego, ale przez internet 😕. Plastyka nie jest moim ulubionym przedmiotem
+                            - okropnie rysuję i maluję! Za to świetnie gram na gitarze 😊. Moim ulubionym przedmiotem
+                            jest informatyka - bardzo lubię surfować po internecie. Ja też interesuję się sportem. Piłka
+                            nożna to moja ulubiona dyscyplina 😁. <span class="weight">Zawsze</span> kiedy mam czas,
+                            gram w piłkę z kolegami. <span class="weight">Często</span> jeżdżę na rowerze i pływam na
+                            basenie. <span class="weight">Czasem</span> gram w tenisa. Interesuję się fotografią, ale
+                            <span class="weight">rzadko</span> robię zdjęcia. Lubię też oglądać filmy. <span
+                                class="weight">Zwykle</span> oglądam filmy przygodowe, ale <span
+                                class="weight">nigdy</span> nie oglądam horrorów. <br> Po prostu się boję 😱! <br>
+                            Pozdrawiam <br>Eduardo.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- end 1 -->
+
+            <!-- 2 -->
+            <h2>2. Proszę uzupiełnić. [505D2]</h2>
+            <div class="two">
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131177&authkey=%21ACCll7A43ldMcMQ&width=1532&height=450"
+                        alt="jak często">
+                </div>
+                <div>
+                    <table class="question-set" id="set2">
+                        <tr>
+                            <th></th>
+                            <th>LISA</th>
+                            <th>EDUARDO</th>
+                        </tr>
+                        <tr>
+                            <td>zawsze</td>
+                            <td><input type="text" data-answer="biega w parku" class="line_3"></td>
+                            <td><span class="blue italic">gra w piłkę</span></td>
+                        </tr>
+                        <tr>
+                            <td>zwykle</td>
+                            <td><input type="text" data-answer="jeździ na łyżwach" class="line_3"></td>
+                            <td><input type="text" data-answer="ogląda filmy przygodowe" class="line_3"></td>
+                        </tr>
+                        <tr>
+                            <td>często</td>
+                            <td><input type="text" data-answer="jeździ na rolkach" class="line_3"></td>
+                            <td><input type="text" data-answer="jeździ na rowerze i pływa na basenie" class="line_3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>czsem</td>
+                            <td><input type="text" data-answer="ogląda filmy z rodzeństwem" class="line_3"></td>
+                            <td><input type="text" data-answer="gra w tenisa" class="line_3"></td>
+                        </tr>
+                        <tr>
+                            <td>rzadko</td>
+                            <td><input type="text" data-answer="chodzi do kina" class="line_3"></td>
+                            <td><input type="text" data-answer="robi zdjęcia" class="line_3"></td>
+                        </tr>
+                        <tr>
+                            <td>nigdy</td>
+                            <td>
+                                <spn class="italic blue">nie jeździ na snowboardzie</spn>
+                            </td>
+                            <td><input type="text" data-answer="nie ogląda horrorów" class="line_3"></td>
+                        </tr>
+                    </table>
+                    <button onclick="checkAnswers('set2')">Check</button>
+                    <button onclick="toggleHints('hints2')">Wskazówka</button>
+                    <div id="hints2" style="display: none;">
+                        <ul>
+                            <li>Zawsze:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: biega w parku</li>
+                                    <li>EDUARDO: gra w piłkę</li>
+                                </ul>
+                            </li>
+                            <li>Zwykle:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: jeździ na łyżwach</li>
+                                    <li>EDUARDO: ogląda filmy przygodowe</li>
+                                </ul>
+                            </li>
+                            <li>Często:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: jeździ na rolkach</li>
+                                    <li>EDUARDO: jeździ na rowerze i pływa na basenie</li>
+                                </ul>
+                            </li>
+                            <li>Czasem:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: ogląda filmy z rodzeństwem</li>
+                                    <li>EDUARDO: gra w tenisa</li>
+                                </ul>
+                            </li>
+                            <li>Rzadko:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: chodzi do kina</li>
+                                    <li>EDUARDO: robi zdjęcia</li>
+                                </ul>
+                            </li>
+                            <li>Nigdy:
+                                <ul style="margin-left: 5%;">
+                                    <li>LISA: nie jeździ na snowboardzie</li>
+                                    <li>EDUARDO: nie ogląda horrorów</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- end 2 -->
+    <!-- 3 -->
+    <div class="two">
+        <div class="image">
+            <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131177&authkey=%21ACCll7A43ldMcMQ&width=1532&height=450"
+                alt="jak często">
+        </div>
+        <div>
+            <h3>3. Proszę odpowiedzieć na pytania a następnie zapytać kolegę. [505D3]</h3>
+            <div class="image" style="width: 90%;">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131178&authkey=%21AFbMtaoNs2mTTjY&width=1188&height=838"
+                    alt="505D3">
+            </div>
+        </div>
+    </div>
+
+    <!-- end 3 -->
+
+    <!-- 4-5 -->
+     <div class="image">
+        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131179&authkey=%21AGlgDnVckZUR6p4&width=2712&height=2172" alt="505D4-5">
+     </div>
+
+    <!-- end 4-5 -->
+     <!-- 6 -->
+    <h3>6. Proszę uzuprłnić. [505D8]</h3>
+    <div class="three" style="margin-left: 5%;">
+        <!-- 6.1 -->
+        <div class="question-set" id="set3">
+            <div class="dialog italic ">
+                <h4>móc</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="mogę"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="możesz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <input type="text" data-answer="może"
+                            class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <input type="text" data-answer="możemy" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <input type="text" data-answer="możecie" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <span class="blue italic">mogą</span></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set3')">Check</button>
+            <button onclick="toggleHints('hints3')">Wskazówka</button>
+            <div id="hints3" style="display: none;">
+                <p>ja => mogę
+                </p>
+                <p>ty => możesz</p>
+                <p>on/ona/ono => może</p>
+                <p>my => możemy</p>
+                <p>wy => możecie</p>
+                <p>oni/one => mogą</p>
+            </div>
+        </div>
+        <!-- 6.2 -->
+        <div class="question-set" id="set4">
+            <div class="dialog italic ">
+                <h4>rysować</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="rysuję"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="rysujesz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <input type="text" data-answer="rysuje"
+                            class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <input type="text" data-answer="rysujemy" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <span class="blue">rysujecie</span>
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <input type="text" data-answer="rysują"
+                            class="line_2"></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set4')">Check</button>
+            <button onclick="toggleHints('hints4')">Wskazówka</button>
+            <div id="hints4" style="display: none;">
+                <p>ja => rysuję
+                </p>
+                <p>ty => rysujesz</p>
+                <p>on/ona/ono => rysuje</p>
+                <p>my => rysujemy</p>
+                <p>wy => rysujecie</p>
+                <p>oni/one => rysują</p>
+            </div>
+        </div>
+        <!-- 6.3 -->
+        <div class="question-set" id="set5">
+            <div class="dialog italic ">
+                <h4>musieć</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="muszę"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="musisz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <span class="blue italic">musi</span></p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <input type="text" data-answer="musimy" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <input type="text" data-answer="musicie"
+                        class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <input type="text" data-answer="muszą"
+                            class="line_2"></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set5')">Check</button>
+            <button onclick="toggleHints('hints5')">Wskazówka</button>
+            <div id="hints5" style="display: none;">
+                <p>ja => muszę</p>
+                <p>ty => musisz</p>
+                <p>on/ona/ono => musi</p>
+                <p>my => musimy</p>
+                <p>wy => musicie</p>
+                <p>oni/one => muszą</p>
+            </div>
+        </div>
+    </div>
+    <div class="three" style="margin-left: 5%;">
+        <!-- 6.4 -->
+        <div class="question-set" id="set6">
+            <div class="dialog italic ">
+                <h4>tańczyć</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="tańczę"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="tańczysz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <input type="text" data-answer="tańczy"
+                            class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <span class="blue">
+                    <italic>tańczymy</italic>
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <input type="text" data-answer="tańczycie" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <input type="text" data-answer="tańczą" class="line_2"></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set6')">Check</button>
+            <button onclick="toggleHints('hints6')">Wskazówka</button>
+            <div id="hints6" style="display: none;">
+                <p>ja => tańczę</p>
+                <p>ty => tańczysz</p>
+                <p>on/ona/ono => tańczy</p>
+                <p>my => tańczymy</p>
+                <p>wy => tańczycie</p>
+                <p>oni/one => tańczą</p>
+            </div>
+        </div>
+        <!-- 6.5 -->
+        <div class="question-set" id="set7">
+            <div class="dialog italic ">
+                <h4>umieć</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="umiem"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="umiesz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <input type="text" data-answer="umie"
+                            class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <input type="text" data-answer="umiemy" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <input type="text" data-answer="umiecie"
+                        class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <span class="blue">umieją</span></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set7')">Check</button>
+            <button onclick="toggleHints('hints7')">Wskazówka</button>
+            <div id="hints7" style="display: none;">
+                <p>ja => umiem</p>
+                <p>ty => umiesz</p>
+                <p>on/ona/ono => umie</p>
+                <p>my => umiemy</p>
+                <p>wy => umiecie</p>
+                <p>oni/one => umieją</p>
+            </div>
+        </div>
+        <!-- 6.6 -->
+        <div class="question-set" id="set8">
+            <div class="dialog italic ">
+                <h4>biegać</h4>
+                <div class="colors">
+                    <p class="p22 italic ">(ja) <input type="text" data-answer="biegam"
+                            class="line_2"></p>
+                </div>
+                <div class="colors">
+                    <p class="p22">(ty) <input type="text" data-answer="biegasz" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (on/ ona/ ono) <span class="blue italic">biega</span></p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (my) <input type="text" data-answer="biegamy" class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (wy) <input type="text" data-answer="biegacie"
+                        class="line_2">
+                    </p>
+                </div>
+                <div class="colors">
+                    <p class="p22"> (oni/ one) <input type="text" data-answer="biegają"
+                            class="line_2"></p>
+                </div>
+            </div>
+            <button onclick="checkAnswers('set8')">Check</button>
+            <button onclick="toggleHints('hints8')">Wskazówka</button>
+            <div id="hints8" style="display: none;">
+                <p>ja => biegam</p>
+                <p>ty => biegasz</p>
+                <p>on/ona/ono => biega</p>
+                <p>my => biegamy</p>
+                <p>wy => biegacie</p>
+                <p>oni/one => biegają</p>
+            </div>
+        </div>
+         
+    </div>
+
+
+    <!-- end 4 - 6 -->
+    <!-- 7 -->
+    <h2>7. Co pasuje? [505C7]</h2>
+    <div class="questions">
+        <div>
+            <div class="options italic">
+                <div class="option">1. Emma swietnie </div>
+                <div class="option  blue" data-index="0"> rysuję | </div>
+                <div class="option  blue" data-index="1">
+                    &nbsp; rysują | </div>
+                <div class="option  blue" data-index="2" style="text-decoration: underline;">
+                    &nbsp; rysuje.</div>
+            </div>
+        </div>
+        <div class="question" data-correct="2">
+            <div class="options">
+                <div class="option">2. Wy </div>
+                <div class="option coral" data-index="0"> &nbsp;chcemy | </div>
+                <div class="option coral" data-index="1"> &nbsp;chcą |</div>
+                <div class="option coral" data-index="2"> &nbsp;chcecie </div>
+                <div class="option">ogladac telewizje.</div>
+            </div>
+        </div>
+        <div class="question" data-correct="2">
+            <div class="options">
+                <div class="option">3. Ty </div>
+                <div class="option coral" data-index="0"> &nbsp;piszecie | </div>
+                <div class="option coral" data-index="1"> &nbsp;piszę |</div>
+                <div class="option coral" data-index="2"> &nbsp;piszesz </div>
+                <div class="option">ładne wiersze.</div>
+            </div>
+        </div>
+        <div class="question" data-correct="1">
+            <div class="options">
+                <div class="option">4. Oni </div>
+                <div class="option coral" data-index="0"> &nbsp;idzie | </div>
+                <div class="option coral" data-index="1"> &nbsp;idą |</div>
+                <div class="option coral" data-index="2"> &nbsp;idziecie </div>
+                <div class="option">do kina.</div>
+            </div>
+        </div>
+        <div class="question" data-correct="1">
+            <div class="options">
+                <div class="option">5. Ja nie </div>
+                <div class="option coral" data-index="0"> &nbsp;może | </div>
+                <div class="option coral" data-index="1"> &nbsp;mogę |</div>
+                <div class="option coral" data-index="2"> &nbsp;mogą </div>
+                <div class="option">iść do kina.</div>
+            </div>
+        </div>
+        <div class="question" data-correct="2">
+            <div class="options">
+                <div class="option">6. Adam okropnie </div>
+                <div class="option coral" data-index="0"> &nbsp;malujesz | </div>
+                <div class="option coral" data-index="1"> &nbsp;malować |</div>
+                <div class="option coral" data-index="2"> &nbsp;maluje. </div>
+            </div>
+        </div>
+        <div class="question" data-correct="1">
+            <div class="options">
+                <div class="option">7. Dziecko </div>
+                <div class="option coral" data-index="0"> &nbsp;piję | </div>
+                <div class="option coral" data-index="1"> &nbsp;pije |</div>
+                <div class="option coral" data-index="2"> &nbsp;pijesz </div>
+                <div class="option">sok.</div>
+            </div>
+        </div>
+    </div>
+    <div class="displayFlex">
+        <button id="checkAnswers">Sprawdź</button>
+        <button onclick="toggleHints('hints4')">Wskazówka</button>
+        <div id="hints4" style="display: none;">
+            <p>1. Emma świetnie rysuje. </p>
+            <p>2. Wy chcecie oglądać telewizję.</p>
+            <p>3. Ty piszesz ładne wiersze. </p>
+            <p>4. Oni idą do kina. </p>
+            <p>5. Ja nie mogę iść do kina.</p>
+            <p>6. Adam okropnie maluje.</p>
+            <p>7. Dziecko pije sok.</p>
+        </div>
+    </div>
+
+    <!-- end 7 -->
+    <!-- 8-9 -->
+    <div class="two">
+        <div>
+            <h3>8. Jaki jest bezokolicznik? [505С8]</h3>
+            <div class="question-set" id="set5" style="width: 120%;">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p22 italic ">a. chcę, chcesz => <span class="blue"> chcieć</span>.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">b. piszę, piszesz => <input type="text" data-answer="p" class="line_5"><input
+                                type="text" data-answer="i" class="line_5">s<input type="text" data-answer="a"
+                                class="line_5"><input type="text" data-answer="ć" class="line_5"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">c. idę, idziesz => <input type="text" data-answer="i" class="line_5">ś<input
+                                type="text" data-answer="ć" class="line_5"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">d. piję, pijesz => <input type="text" data-answer="p" class="line_5"><input
+                                type="text" data-answer="i" class="line_5">ć</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">e. mogę, możesz => <input type="text" data-answer="m" class="line_5">óc
+                        </p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">f. maluję, maluesz => m<input type="text" data-answer="a" class="line_5">l <input
+                                type="text" data-answer="o" class="line_5"><input type="text" data-answer="w"
+                                class="line_5"><input type="text" data-answer="a" class="line_5"><input type="text"
+                                data-answer="ć" class="line_5"></p>
+                    </div>
+                    <div class="colors">
+                        <p class="p22">g. podróżuję, podróżujesz => p<input type="text" data-answer="o" class="line_5">d
+                            <input type="text" data-answer="r" class="line_5">ó <input type="text" data-answer="ż"
+                                class="line_5"><input type="text" data-answer="o" class="line_5">w<input type="text"
+                                data-answer="a" class="line_5"><input type="text" data-answer="ć" class="line_5">
+                        </p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set5')">Check</button>
+                <button onclick="toggleHints('hints5')">Wskazówka</button>
+                <div id="hints5" style="display: none;">
+                    <p>a. chcę, chcesz => chcieć</p>
+                    <p>b. piszę, piszesz => pisać</span></p>
+                    <p>c. idę, idziesz => iść</span></p>
+                    <p>d. piję, pijesz => pić</p>
+                    <p>e. mogę, możesz => móc</p>
+                    <p>f. maluję, malujesz => malować</p>
+                    <p>g. podróżuję, podróżujesz => podróżować</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="question-set" id="set6" style="width: 80%;">
+                <h3>9. Proszę uzupiełnić. [505C9]</h3>
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <p class="p20 italic ">1. Czy on <span class="blue">może</span>(móc) iść do kina?</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">2. Czy wy <input type="text" data-answer="chciecie" class="line_2">(chcieć) grać
+                            w piłkę?</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">3. My <input type="text" data-answer="idziemy" class="line_2">(iść) dziś
+                            na dyskotekę.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">4. Kto dziś <input type="text" data-answer="pisze" class="line_2">(pisać)
+                            test?</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">5. Dlaczego ty <input type="text" data-answer="pijesz" class="line_2">(pić) zimny
+                            sok?</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">6. James <input type="text" data-answer="interesuje się"
+                                class="line_2">(interesować się) przyrodą.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">7. Oni <input type="text" data-answer="surfują" class="line_2">(surfować)
+                            po internecie.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">8. Moja siostra <input type="text" data-answer="pracuje"
+                                class="line_2">(pracować) w szkole.</p>
+                    </div>
+                    <div class="colors">
+                        <p class="p20">9. Jej kuzyn i ja <input type="text" data-answer="studiujemy"
+                                class="line_2">(studiować) chemię.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set6')" style="margin-left: 20%;">Check</button>
+                <button onclick="toggleHints('hints6')" style="margin-left: 20%;">Wskazówka</button>
+                <div id="hints6" style="display: none;">
+                    <p>1. Czy on może (móc) iść do kina?</p>
+                    <p>2. Czy wy chciecie (chcieć) grać w piłkę?</p>
+                    <p>3. My idziemy (iść) dziś na dyskotekę.</p>
+                    <p>4. Kto dziś pisze (pisać) test?</p>
+                    <p>5. Dlaczego ty pijesz (pić) zimny sok?</p>
+                    <p>6. James interesuje się (interesować się) przyrodą.</p>
+                    <p>7. Oni surfują (surfować) po internecie.</p>
+                    <p>8. Moja siostra pracuje (pracować) w szkole.</p>
+                    <p>9. Jej kuzyn i ja studiujemy (studiować) chemię.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end 8-9 -->
+    <!-- 10 -->
+    <h2>10. Proszę posłuchać i zaznaczyć, a nasyępnie opowiedzieć, co oni robią w weekend. [505C10</h2>
+
+    <audio src="./audio/114.mp3" controls>114</audio>
+    <audio src="./audio/115_t88_2.mp3" controls>115</audio>
+    <audio src="./audio/116_t88_3.mp3" controls>116</audio>
+    <div class="dialog italic ">
+        <table id="task1">
+            <tr>
+                <td></td>
+                <td><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131171&authkey=%21ADRZske5GRf9Dto&width=460&height=352"
+                        alt="artem" style="width: 150px;"></td>
+                <td><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131172&authkey=%21AE42c_IJPHQMItA&width=276&height=364"
+                        alt="lukas" style="width: 150px;"></td>
+                <td><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131173&authkey=%21ALOXsiBYLefyTEU&width=280&height=334"
+                        alt="misaki" style="width: 150px;"></td>
+                <td><img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131174&authkey=%21AMuViAnxnyQSaww&width=286&height=324"
+                        alt="oliwia" style="width: 150px;"></td>
+            </tr>
+            <tr class="task">
+                <td>a. pływac</td>
+                <td><label><input type="checkbox" name="question1" value="1"> opcja 1</label></td>
+                <td><label><input type="checkbox" name="question1" value="2"> opcja 2</label></td>
+                <td><label><input type="checkbox" name="question1" value="3"> opcja 3</label></td>
+                <td><label><input type="checkbox" name="question1" value="4"> opcja 4</label></td>
+            </tr>
+            <tr class="task">
+                <td>b. jeździć na rolkach</td>
+                <td><label><input type="checkbox" name="question2" value="1"> opcja 1</label></td>
+                <td><label><input type="checkbox" name="question2" value="2"> opcja 2</label></td>
+                <td><label><input type="checkbox" name="question2" value="3"> opcja 3</label></td>
+                <td><label><input type="checkbox" name="question2" value="4"> opcja 4</label></td>
+            </tr>
+            <tr class="task">
+                <td>c. tańczyć</td>
+                <td><label><input type="checkbox" name="question3" value="1"> opcja 1</label></td>
+                <td><label><input type="checkbox" name="question3" value="2"> opcja 2</label></td>
+                <td><label><input type="checkbox" name="question3" value="3"> opcja 3</label></td>
+                <td><label><input type="checkbox" name="question3" value="4"> opcja 4</label></td>
+            </tr>
+            <tr class="task">
+                <td>d. iść do kina</td>
+                <td><label><input type="checkbox" name="question4" value="1"> opcja 1</label></td>
+                <td><label><input type="checkbox" name="question4" value="2"> opcja 2</label></td>
+                <td><label><input type="checkbox" name="question4" value="3"> opcja 3</label></td>
+                <td><label><input type="checkbox" name="question4" value="4"> opcja 4</label></td>
+            </tr>
+            <tr class="task">
+                <td>e. grać w tenisa</td>
+                <td><label><input type="checkbox" name="question5" value="1"> opcja 1</label></td>
+                <td><label><input type="checkbox" name="question5" value="2"> opcja 2</label></td>
+                <td><label><input type="checkbox" name="question5" value="3"> opcja 3</label></td>
+                <td><label><input type="checkbox" name="question5" value="4"> opcja 4</label></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="checkCheckbox('task1')">Chek</button>
+
+
+
+
+
+
+    <!-- script -->
+    <div style="margin-bottom: 5%;"></div>
+    <script src="../script.js"></script>
+    <script>
+        function checkCheckbox(taskId) {
+            const correctAnswers = {
+                task1: {
+                    question1: ['1'], // a
+                    question2: ['2', '3', '4'],      // b
+                    question3: ['1', '3'],      // c
+                    question4: ['2', '4'],      // d
+                    question5: ['2'],      // e
+                }
+            };
+
+            let allCorrect = true;
+
+            if (correctAnswers[taskId]) {
+                const answers = correctAnswers[taskId];
+
+                for (const [question, correctValues] of Object.entries(answers)) {
+                    const selectedAnswers = document.querySelectorAll(`#${taskId} input[name="${question}"]:checked`);
+                    const selectedValues = Array.from(selectedAnswers).map(input => input.value);
+                    const taskElement = document.querySelector(`#${taskId} input[name="${question}"]`).closest('.task');
+
+                    // Проверка на совпадение выбранных значений с правильными
+                    if (selectedValues.length === correctValues.length && selectedValues.every(val => correctValues.includes(val))) {
+                        taskElement.classList.add('correct');
+                        taskElement.classList.remove('incorrect');
+                    } else {
+                        taskElement.classList.add('incorrect');
+                        taskElement.classList.remove('correct');
+                        allCorrect = false;
+                    }
+                }
+            } else {
+                console.error(`No correct answers provided for task id: ${taskId}`);
+                return;
+            }
+
+
+        }
+
+    </script>
+
+    </main>
+    </div>
+</body>
+
+</html>
