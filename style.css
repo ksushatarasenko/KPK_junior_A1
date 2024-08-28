@@ -177,7 +177,10 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    
+    margin: 0 auto;
+ }
+ .two div{
+   /* justify-content: center; */
  }
  .two img{
     max-width: 100%;
@@ -211,7 +214,15 @@ p{
    border: none;          /* Убираем стандартное оформление */
    height: 2px;           /* Толщина линии */
    background-color: rgb(115, 103, 103); /* Цвет линии */
+   margin: 1.5%;
  }
+
+ /* flex na 3 */
+ .flex3{
+   display: grid;
+   gap: 2%;
+ }
+ 
  /* ===== FOOTER ========= */
  footer{
     display: flex;
@@ -445,7 +456,7 @@ th {
    margin-bottom: 3%;
 }
 label{
-   margin-left: 7%;
+   margin-right: 2%;
 }
 .line{
    width: 200px;
@@ -525,7 +536,7 @@ button{
 
 
 input {
-   font-size: 22px;
+   font-size: 20px;
    /* Увеличенный размер шрифта */
    width: 40px;
    /* Ширина поля ввода */
@@ -547,6 +558,7 @@ input {
 .options {
    display: flex;
    gap: 10px;
+   align-items: center;
 }
 
 .raspisanie{
@@ -558,4 +570,12 @@ input {
    display: flex;
    gap: 2px;
    width: 1200px;
+}
+.flex{
+   display: flex;
+   gap: 2%;
+}
+.przerewod{
+   margin: 0;
+   padding: 0.2%;
 }
