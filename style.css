@@ -221,6 +221,10 @@ p{
  .flex3{
    display: grid;
    gap: 2%;
+   max-width: 1200px;
+ }
+ .flex3 img{
+   width: 100%;
  }
  
  /* ===== FOOTER ========= */
@@ -319,6 +323,10 @@ p{
    align-items: center; */
    margin: 0 auto;
 }
+
+table img{
+   width: 80%;
+}
 /* ======= IMAGE ========= */
 .image{
    width: 100%;
@@ -416,7 +424,7 @@ th {
     display: none;
 }
 .question {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .question button {
     margin-top: 10px;
@@ -447,7 +455,6 @@ th {
 }
 /* interactive */
 .question{
-   margin: 3%;
    width: 100%;
    font-size: 20px;
 }
@@ -578,4 +585,37 @@ input {
 .przerewod{
    margin: 0;
    padding: 0.2%;
+}
+
+/* peretaskivanie fraz */
+
+.containerFraz {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   max-width: 600px;
+   margin: auto;
+}
+.draggable {
+   padding: 10px;
+   background-color: #f0f0f0;
+   border: 1px solid #ccc;
+   cursor: grab;
+}
+.dropzone {
+   padding: 10px;
+   background-color: #e0f7fa;
+   border: 1px dashed #00796b;
+   min-height: 50px;
+}
+.dropzone.dragover {
+   background-color: #b2ebf2;
+}
+.button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #00796b;
+   color: white;
+   border: none;
+   cursor: pointer;
 }
