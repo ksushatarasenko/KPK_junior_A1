@@ -110,28 +110,29 @@
 }
 
  <!-- html -->
-  <div id="task1">
-    <div class="task">
-    
-    <div class="options">
-        <label><input type="radio" name="question1" value="1"> Вариант 1</label>
-        <label><input type="radio" name="question1" value="2"> Вариант 2</label>
-        <label><input type="radio" name="question1" value="3"> Вариант 3</label>
+ <div>
+    <div id="task6">
+        <div class="task">
+            <div class="options">
+                <p class="p20">Mathis ogląda fajny program.</p>
+                <div class="boxRadio">
+                    <label><input type="radio" name="question1" value="1"> P</label>
+                    <label><input type="radio" name="question1" value="2"> N</label>
+                </div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="options">
+                <p class="p20">Mathis kupuje na Allegro nowy album.</p>
+                <div class="boxRadio">
+                    <label><input type="radio" name="question1" value="1"> P</label>
+                    <label><input type="radio" name="question1" value="2"> N</label>
+                </div>
+            </div>
+        </div>
     </div>
+    <button onclick="checkRadio('task6')">Chek</button>
 </div>
-
-<div class="task">
-    
-    <div class="options">
-        <label><input type="radio" name="question2" value="1"> Вариант 1</label>
-        <label><input type="radio" name="question2" value="2"> Вариант 2</label>
-        <label><input type="radio" name="question2" value="3"> Вариант 3</label>
-    </div>
-</div>
-  </div>
- 
-
-<button onclick="checkRadio('task1')">Chek</button>
 <!--  -->
 
 ------- checkbox ----
