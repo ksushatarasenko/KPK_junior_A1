@@ -186,8 +186,8 @@ p{
    grid-template-columns: 1fr 1fr;
 } */
  .two{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin: 0 auto;
     margin-left: 3%;
@@ -196,7 +196,7 @@ p{
   width: 100%;
  }
  .two img{
-    max-width: 100%;
+   width: 100%;
     
  }
  .two iframe{
@@ -204,8 +204,13 @@ p{
   height: 100%;
 }
 .two_1{
+   width: 100%;
    display: flex;
    gap: 30px;
+   justify-content: space-around;
+}
+.two_1 img{
+   width: 100%;
 }
  .three{
     display: flex;
@@ -361,7 +366,8 @@ table img{
    transition: transform 1.5s ease;
 }
 .zoomable:hover {
-   transform: scale(1.5); 
+   transform: scale(1.8); 
+   margin-left: 5%;
 }
 .four{
    display: grid;
@@ -470,6 +476,9 @@ th {
 .question{
    width: 100%;
    font-size: 20px;
+}
+.question-set{
+   width: 100%;
 }
 .vopros{
    font-weight: 800;
