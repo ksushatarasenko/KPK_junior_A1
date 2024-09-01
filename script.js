@@ -1,3 +1,5 @@
+// функция кнопки ответ
+
 function checkAnswers(setId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
@@ -192,3 +194,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+

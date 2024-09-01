@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №6Plus</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 <br> 6</h1>
+            <h2>Plus </h2>
+            <h3>biernik - utrwalenie<br>prezentacja polskich artystów i sportowców</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W3FIAJ-DcfU?si=E54wq7_ySmnOzJkb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- start 2-3-->
+            <div class="two">
+                <div class="image">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRG5w8AztMBICoN5Q?embed=1&width=990&height=1992"
+                        alt="506E2">
+                </div>
+                <div class="image">
+                    <audio src="./audio/153.mp3" controls>153</audio>
+                    <h3>3. Proszę posłuchać o tej osobie i wybrać dobrą odpowiedź. [506E3]</h3>
+                    <div>
+                        <div id="task506E3">
+                            <div class="task italic p20">
+                                <div>1. Kraj:</div>
+                                <div class="p18"><input type="checkbox" name="question1" value="1">Czechy i Szwecja
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question1" value="2">Polska i
+                                    Szwecja</label></div>
+                                <div class="p18"><input type="checkbox" name="question1" value="3">Polska i
+                                    Czechy</label></div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>2. Język:</div>
+                                <div class="p18"><input type="checkbox" name="question2" value="1">czeski i szwedzki
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question2" value="2">polski i
+                                    szwedzki</label></div>
+                                <div class="p18"><input type="checkbox" name="question2" value="3">polski i czeski
+                                    </label></div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>3. Muzyka:</div>
+                                <div class="p18"><input type="checkbox" name="question3" value="1">rockowa
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question3" value="2">popowa</label></div>
+                                <div class="p18"><input type="checkbox" name="question3"
+                                        value="3">popowo-rockowa</label></div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>4. Nowa płyta:</div>
+                                <div class="p18"><input type="checkbox" name="question4" value="1">,,Rewelacja"
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question4" value="2">,,Ewa na
+                                    wakacjach"</label></div>
+                                <div class="p18"><input type="checkbox" name="question4" value="3">,,Ewakuacja"</label>
+                                </div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>5. Rodzeństwo:</div>
+                                <div class="p18"><input type="checkbox" name="question5" value="1">siostra Marta i brat
+                                    Artur
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question5" value="2">siostra Magda i brat
+                                    Artur</label></div>
+                                <div class="p18"><input type="checkbox" name="question5" value="3">siostra Magda i brat
+                                    Adam</label></div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>6. Sport:</div>
+                                <div class="p18"><input type="checkbox" name="question6" value="1">pływanie
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question6" value="2">narciarstwo</label>
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question6" value="3">bieganie</label>
+                                </div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>7. Zwierzak:</div>
+                                <div class="p18"><input type="checkbox" name="question7" value="1">chomik
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question7" value="2">kot</label></div>
+                                <div class="p18"><input type="checkbox" name="question7" value="3">pies</label></div>
+                            </div>
+                            <div class="task italic p20">
+                                <div>8. Ulubiona piosenkarka:</div>
+                                <div class="p18"><input type="checkbox" name="question8" value="1">Lady Gaga
+                                </div>
+                                <div class="p18"><input type="checkbox" name="question8" value="2">Rihanna</label></div>
+                                <div class="p18"><input type="checkbox" name="question8" value="3">Doda</label></div>
+                            </div>
+                        </div>
+                        <button id="checkCheckbox">Sprawdź</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4-5 -->
+            <div class="two">
+                <div>
+                    <h3>4. Jaki sport oni uprawiają?</h3>
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRIbFD-MZM0fVVaJQ?embed=1&width=1062&height=1156"
+                        alt="506E4" style="width: 70%;">
+                    <div class="question-set" id="set4">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p italic ">a. <input type="text" data-answer="4" class="line_5"> piłkę nożną
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p italic ">b. <input type="text" data-answer="2" class="line_5"> koszykówkę
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p italic ">c. <input type="text" data-answer="1" class="line_5"> tenis</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p italic ">d. <input type="text" data-answer="3" class="line_5"> narciarstwo
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set4')">Check</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>5. Proszę uzupełnić tekst. [506E5]</h3>
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRJC2iaCzHLASxv0w?embed=1&width=1358&height=1028"
+                        alt="506E5" style="width: 86%;">
+                    <div class="question-set" id="set5">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">Mój ulubiony sportowiec <span class="blue">nazywa się</span>
+                                    Marcin Gortat. On jest z <input type="text" data-answer="Polski" class="line_1">.
+                                    Urodził się w Łodzi, ale teraz pracuje w Waszyngtonie. Marcin gra w <input
+                                        type="text" data-answer="koszykówkę" class="line_1"> w lidze NBA. Jego drużyna
+                                    to Washington Wizards. Marcin ma <input type="text" data-answer="40" class="line_1">
+                                    lat. Jest bardzo <input type="text" data-answer="wysoki" class="line_1">, ma aż 213
+                                    cm wzrostu! Prywatnie bardzo lubi <input type="text" data-answer="piłkę"
+                                        class="line_1"> nożną i <input type="text" data-answer="boks" class="line_1">.
+                                    Mówi po polsku, <input type="text" data-answer="angielsku" class="line_1">, <input
+                                        type="text" data-answer="niemiecku" class="line_1"> i serbsku. Marcin lubi
+                                    muzykę, a najbardziej lubi <input type="text" data-answer="amerykański hip-hop"
+                                        class="line_2">. Jego ulubiony <input type="text" data-answer="film"
+                                        class="line_1"> to „Transformers”. Ma rodzeństwo, dwóch starszych braci: brata
+                                    <input type="text" data-answer="Filipa" class="line_1"> i brata <input type="text"
+                                        data-answer="Roberta" class="line_1">.</p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set5')">Check</button>
+                        <button onclick="toggleHints('hints5')">Wskazówka</button>
+                        <div id="hints5" style="display: none;">
+                            <p>Mój ulubiony sportowiec <span class="blue">nazywa się</span> Marcin Gortat. On jest z
+                                <span class="blue">Polski</span>. Urodził się w Łodzi, ale teraz pracuje w Waszyngtonie.
+                                Marcin gra w <span class="blue">koszykówkę</span> w lidze NBA. Jego drużyna to
+                                Washington Wizards. Marcin ma <span class="blue">40</span> lat. Jest bardzo <span
+                                    class="blue">wysoki</span>, ma aż 213 cm wzrostu! Prywatnie bardzo lubi <span
+                                    class="blue">piłkę</span> nożną i <span class="blue">boks</span>. Mówi po polsku,
+                                <span class="blue">angielsku</span>, <span class="blue">niemiecku</span> i serbsku.
+                                Marcin lubi muzykę, a najbardziej lubi <span class="blue">amerykański hip-hop</span>.
+                                Jego ulubiony <span class="blue">film</span> to „Transformers”. Ma rodzeństwo, dwóch
+                                starszych braci: brata <span class="blue">Filipa</span> i brata <span
+                                    class="blue">Roberta</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- end 4-5 -->
+            <!-- 6-7 -->
+            <div class="two">
+                <div class="image">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRKZVQp_wUuvYj7qw?embed=1&width=1584&height=830"
+                        alt="506E6">
+                </div>
+                <div class="image">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRLyWDe740xxvY70Q?embed=1&width=1750&height=1132"
+                        alt="506E7">
+                </div>
+            </div>
+
+            <!-- end 6-7 -->
+
+            <!-- 8 -->
+            <h2>8. Proszę posłuchać i zaznaczyć dobre nazwisko. [506E8]</h2>
+            <audio src="./audio/154.mp3" controls>154</audio>
+            <div class="three">
+                <div>
+                    <h3>AKTOR/ AKTORKA</h3>
+                    <div class="questions">
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">1. Agata: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Kulesza | </p>
+                                <p class="p20 option" data-index="1" style="text-decoration: underline;">&nbsp;Kulesia</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">2. Agnieszka: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Grochowska | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Groszowska</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">3. Borys: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Czyc | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Szyc</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">4. Joanna: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Żabczyńska | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Jabłczyńska</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">5. Magdalena: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Różczka | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Różecka</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="italic">
+                                <p class="p20">6. Małgorzata: </p>
+                                <div class="displayFlex">
+                                    <p class="p20 option" data-index="0">&nbsp;Koziuchowska | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Kożuchowska</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">7. Marcin: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Kowalczyk | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Kowalcik</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="italic">
+                                <p class="p20">8. Mateusz: </p>
+                                <div class="displayFlex">
+                                    <p class="p20 option" data-index="0">&nbsp;Kościukiewicz | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Koszczukiewicz</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">9. Paweł: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Malaszyński | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Małaszyński</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="0">
+                            <div class="displayFlex italic">
+                                <p class="p20">10. Robert: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Więckiewicz| | </p>
+                                <p class="p20 option" data-index="1" >&nbsp;Więskiewicz</p>
+                            </div>
+                        </div>
+                        <button class="checkAnswers">Sprawdź</button>
+                        <p class="result"></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>PIOSENKARZ/ PIOSENKARKA</h3>
+                    <div class="questions">
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">1. Agnieszka: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Chylińska | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Chelińska</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">2. Ania: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Tąbrowska | </p>
+                                <p class="p20 option" data-index="1">&nbsp; Dąbrowska</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">3. Czesław: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Mocil | </p>
+                                <p class="p20 option" data-index="1">&nbsp; Mozil</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">4. Edyta: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Górniak | </p>
+                                <p class="p20 option" data-index="1" >&nbsp; Gorniak</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">5. Dawid: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Podsiadło | </p>
+                                <p class="p20 option" data-index="1">&nbsp; Podszadło</p>
+                            </div>
+                        </div>
+                        <button class="checkAnswers">Sprawdź</button>
+                        <p class="result"></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>SPORTOWIEC</h3>
+                    <div class="questions">
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">1. Anna: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Rogowska | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Rogoska</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">2. Anita: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Włodarcik | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Włodarczyk</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">3. Jakub: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Błaścikowski | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Błaszczykowski</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">4. Jerzy: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Janowicz | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Janowich</p>
+                            </div>
+                        </div>
+                        <div class="question" data-correct="1">
+                            <div class="displayFlex italic">
+                                <p class="p20">5. Kamil: </p>
+                                <p class="p20 option" data-index="0">&nbsp;Stoch | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Stosz</p>
+                            </div>
+                        </div>
+                        <button class="checkAnswers">Sprawdź</button>
+                        <p class="result"></p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- end 8 -->
+
+
+
+            <!-- KONEC -->
+
+            <div style="margin-bottom: 5%;"></div>
+
+            <!-- script -->
+
+            <script src="../script.js"></script>
+            <script src="../scriptchexBox.js"></script>
+            <script src="../wyborOtweta.js"></script>
+            <script>
+                function checkRadio(taskId) {
+                    // Объект с правильными ответами для каждого задания по его id
+                    const correctAnswers = {
+                        task6: {
+                            question1: '1',
+                            question2: '1',
+                            question3: '1',
+                            question4: '2',
+                            question5: '2',
+                            question6: '1',
+                            question7: '2',
+                            question8: '1'
+                        }
+                    };
+
+                    let allCorrect = true;
+
+                    // Проверяем, есть ли корректные ответы для данного задания
+                    if (correctAnswers[taskId]) {
+                        const answers = correctAnswers[taskId];
+
+                        // Перебираем все вопросы для данного задания
+                        for (const [question, correctValue] of Object.entries(answers)) {
+                            const selectedAnswer = document.querySelector(`#${taskId} input[name="${question}"]:checked`);
+                            const taskElement = document.querySelector(`#${taskId} input[name="${question}"]`).closest('.task');
+
+                            if (selectedAnswer) {
+                                if (selectedAnswer.value === correctValue) {
+                                    taskElement.classList.add('correct');
+                                    taskElement.classList.remove('incorrect');
+                                } else {
+                                    taskElement.classList.add('incorrect');
+                                    taskElement.classList.remove('correct');
+                                    allCorrect = false;
+                                }
+                            } else {
+                                // Если пользователь не выбрал вариант ответа
+                                taskElement.classList.add('incorrect');
+                                taskElement.classList.remove('correct');
+                                allCorrect = false;
+                            }
+                        }
+                    } else {
+                        console.error(`Нет правильных ответов для задания с id: ${taskId}`);
+                        return;
+                    }
+
+                }
+
+                // checkbox
+
+
+
+            </script>
+
+        </main>
+    </div>
+</body>
+
+</html>

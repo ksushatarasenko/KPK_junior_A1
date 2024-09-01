@@ -27,33 +27,32 @@
 <!-- ż -->
  <!-- &nbsp;  probel -->
 
-<!-- prawda/nieprawda -->
+<!-- wybor Otweta -->
 
 <div class="questions">
-    <div>
-        <div class="options italic">
-            <div class="option">1. Gordon jest z Polski. </div>
-            <div class="option  blue" data-index="0"> &nbsp;P | </div>
-            <div class="option  blue" data-index="1" style="text-decoration: underline;">
-                &nbsp;N </div>
-        </div>
-    </div>
-    <div class="question" data-correct="2">
-        <div class="options">
-            <div class="option">2. Gordon lubi muzykę. </div>
-            <div class="option" data-index="0"> &nbsp;P | </div>
-            <div class="option" data-index="1"> &nbsp;N </div>
+    <div class="question" data-correct="0">
+        <div class="displayFlex italic">
+            <p class="p20">1. Agata </p>
+            <p class="p20 option" data-index="0">&nbsp;Kulesza | </p>
+            <p class="p20 option" data-index="1" style="text-decoration: underline;">&nbsp;Kulesia</p>
         </div>
     </div>
     <div class="question" data-correct="0">
-        <div class="options">
-            <div class="option">3. Gordon lubi robić eksperymenty. </div>
-            <div class="option" data-index="0"> &nbsp;P | </div>
-            <div class="option" data-index="1"> &nbsp;N </div>
+        <div class="displayFlex italic">
+            <p class="p20">2. Marek </p>
+            <p class="p20 option" data-index="0">&nbsp;Kowalski | </p>
+            <p class="p20 option" data-index="1" style="text-decoration: underline;">&nbsp;Nowak</p>
         </div>
     </div>
+    <button class="checkAnswers">Sprawdź</button>
+    <p class="result"></p>
 </div>
-<button id="checkAnswers">Sprawdź</button>
+
+<!-- script -->
+ <script src="../"></script>
+
+
+<!-- -------------------------------------------------------- -->
 <!-- RADIO -->
  <!-- script -->
  // radio label
@@ -173,7 +172,28 @@
                     </table>
                 </div>
                 <button onclick="checkCheckbox('task1')">Chek</button>
-           
+           <!-- CHECKBOX  -->
+           <div id="task506E3">
+            <div class="task italic p20">
+                <div>1. Kraj:</div>
+                <div class="p18"><input type="checkbox" name="question1" value="1">Czechy i Szwecja
+                </div>
+                <div class="p18"><input type="checkbox" name="question1" value="2">Polska i
+                    Szwecja</label></div>
+                <div class="p18"><input type="checkbox" name="question1" value="3">Polska i
+                    Czechy</label></div>
+            </div>
+            <div class="task italic p20">
+                <div>2. Język:</div>
+                <div class="p18"><input type="checkbox" name="question2" value="1">czeski i szwedzki
+                </div>
+                <div class="p18"><input type="checkbox" name="question2" value="2">polski i szwedzki</label></div>
+                <div class="p18"><input type="checkbox" name="question2" value="3">polski i czeski
+                </label></div>
+            </div>
+        </div>
+        <button id="checkCheckbox">Sprawdź</button>
+    
 
 
 
