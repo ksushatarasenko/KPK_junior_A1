@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №7A</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .td {
+            transform: rotate(-90deg);
+            width: 30px;
+            height: 110px;
+            font-weight: 900;
+        }
+
+        .table {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: -10%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 <br> 7</h1>
+            <h2>A - Cztery pory roku</h2>
+            <h3>- kiedy: wiosna, latem...<br> Jaka jest twoja ulubiona pora roku? Jaka jest pogoda?</h3>
+            <!-- nowy słowa-->
+            <a href="https://quizlet.com/pl/937108512/krok-po-kroku-junior-1-7a-flash-cards/?i=4wzil5&x=1qqt"
+                target="_blank">NOWY SŁOWA >>></a>
+            <!-- start 1-->
+            <h2>Miesiące i pory roku.</h2>
+            <div class="video">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/JS5bPRi2quU?si=7pKaYmEgwwuXsbaP&amp;start=65"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h2>1. Jak się nazywa to pora roku? Proszę odszyfrować rebus, a potem posłuchać i skontrolować. [507A1]</h2>
+            <audio src="./audio/155.mp3" controls>155</audio>
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRTYCGJr2UywIqFVA?embed=1&width=2814&height=922" alt="507A1">
+            </div>
+            <!-- end 1 -->
+            <!-- 2-3 -->
+            <div class="two">
+                <div>
+                    <h3>2. Jaka to pora roku? [507A2]</h3>
+                    <h4>Ta pora roku jest ...</h4>
+                    <div class="question-set" id="set2">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">- zielona, ale też niebieska jak woda i żółta jak słonce. =>
+                                    <span class="blue">lato</span>
+                                </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">- bardzo zielona, ale też różowa, żółta, biała jak kwiaty. => <input
+                                        type="text" data-answer="wiosna" class="line_1"></p>
+                            </div>
+
+                            <div class="colors">
+                                <p class="p20">- biała jak śnieg, trochę też czarna i srebna. => <input type="text"
+                                        data-answer="zima" class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">- złota, ale może być też żółta, brązowa, a nawet czerwona. => <input
+                                        type="text" data-answer="jesień" class="line_1"></p>
+                            </div>
+                        </div>
+                        <button onclick="checkAnswers('set2')">Check</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>3. Kiedy to jest? Proszę uzupełnić. [507A3]</h3>
+                    <div class="niebieski">
+                        <div class="question-set" id="set3">
+                            <table class="dialog italic ">
+                                <tr>
+                                    <td><span class="weight">pora roku</span> <br>mianownik (kto?, co?)</td>
+                                    <td><span class="weight">kiedy?</span> <br>narzednik (kim?, czim? (коли?))</td>
+                                </tr>
+                                <tr>
+                                    <td>wiosna</td>
+                                    <td><input type="text" data-answer="wiosną" class="line_1"></td>
+                                </tr>
+                                <tr>
+                                    <td>lato</td>
+                                    <td><input type="text" data-answer="latem" class="line_1"></td>
+                                </tr>
+                                <tr>
+                                    <td>jesień</td>
+                                    <td><span class="blue">jesieni</span><span class="red">ą</span></td>
+                                </tr>
+                                <tr>
+                                    <td>zima</td>
+                                    <td><input type="text" data-answer="zimą" class="line_1"></td>
+                                </tr>
+                            </table>
+                            <button onclick="checkAnswers('set3')">Check</button>
+                            <button onclick="toggleHints('hints3')">Wskazówka</button>
+                            <div id="hints3" style="display: none;">
+                                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRUYFZoEPE2GLQDNg?embed=1&width=2440&height=228"
+                                    alt="poryRoku">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end 2-3 -->
+            <!-- 4 -->
+            <h2>4. Kiedy to jest? [507A4]</h2>
+            <table class="italic table" id="task507A4">
+                <tr>
+                    <th><img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRVeYeInCabGno76w?embed=1&width=1308&height=526"
+                            alt="507A4" style="width: 250px;"></th>
+                    <td class="td">WIOSNA</td>
+                    <td class="td">LATEM</td>
+                    <td class="td">JESIENIĄ</td>
+                    <td class="td">ZIMĄ</td>
+                </tr>
+                <tr class="task">
+                    <td>1. Mamy wakacje.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question1" value="1"></label></td>
+                        <td><label><input type="radio" name="question1" value="2"></label></td>
+                        <td><label><input type="radio" name="question1" value="3"></label></td>
+                        <td><label><input type="radio" name="question1" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>2. Mikołaj kupuje prezenty.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question2" value="1"></label></td>
+                        <td><label><input type="radio" name="question2" value="2"></label></td>
+                        <td><label><input type="radio" name="question2" value="3"></label></td>
+                        <td><label><input type="radio" name="question2" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>3. Są ładne tulipany.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question3" value="1"></label></td>
+                        <td><label><input type="radio" name="question3" value="2"></label></td>
+                        <td><label><input type="radio" name="question3" value="3"></label></td>
+                        <td><label><input type="radio" name="question3" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>4. Jest Halloween.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question4" value="1"></label></td>
+                        <td><label><input type="radio" name="question4" value="2"></label></td>
+                        <td><label><input type="radio" name="question4" value="3"></label></td>
+                        <td><label><input type="radio" name="question4" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>5. Jest Prima Aprilis.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question5" value="1"></label></td>
+                        <td><label><input type="radio" name="question5" value="2"></label></td>
+                        <td><label><input type="radio" name="question5" value="3"></label></td>
+                        <td><label><input type="radio" name="question5" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>6. Zaczyna się nowy rok szkolny.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question6" value="1"></label></td>
+                        <td><label><input type="radio" name="question6" value="2"></label></td>
+                        <td><label><input type="radio" name="question6" value="3"></label></td>
+                        <td><label><input type="radio" name="question6" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>7. Dzień jest bardzo krótki.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question7" value="1"></label></td>
+                        <td><label><input type="radio" name="question7" value="2"></label></td>
+                        <td><label><input type="radio" name="question7" value="3"></label></td>
+                        <td><label><input type="radio" name="question7" value="4"></label></td>
+                    </div>
+                </tr>
+                <tr class="task">
+                    <td>8. Słonce jest wysoko.</td>
+                    <div class="options">
+                        <td><label><input type="radio" name="question8" value="1"></label></td>
+                        <td><label><input type="radio" name="question8" value="2"></label></td>
+                        <td><label><input type="radio" name="question8" value="3"></label></td>
+                        <td><label><input type="radio" name="question8" value="4"></label></td>
+                    </div>
+                </tr>
+            </table>
+            <button onclick="checkRadio('task507A4')">Chek</button>
+
+
+
+            <!-- end 4 -->
+            <!-- 5 -->
+            <h2>5. Jaka jest ich ulubiona pora roku?<br>Co libią wtedy robić? [507A5]</h2>
+
+            <div class="question-set" id="set5">
+                <div class="dialog italic ">
+                    <div class="colors">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRWwLju92__0kgo2w?embed=1&width=1202&height=428"
+                            alt="1-Maja" style="width: 200px;">
+                        <audio src="./audio/156.mp3" controls>156</audio>
+                        <p class="p20 italic "><span class="blue"> Jej ulubiona pora roku to zima.</span></p>
+                    </div>
+                    <div class="colors">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRXGCieIrYslt4Gtw?embed=1&width=1202&height=428"
+                            alt="2-Daniel" style="width: 200px;">
+                        <audio src="./audio/157_t110_2.mp3" controls>157</audio>
+                        <p class="p20"> <input type="text" data-answer="Jego ulubiona pora roku to lato"
+                                class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRYh9ML9AA1mbpuDA?embed=1&width=1202&height=428"
+                            alt="3-Olivia" style="width: 200px;">
+                        <audio src="./audio/158_t110_3.mp3" controls>158</audio>
+                        <p class="p20"> <input type="text" data-answer="Jej ulubiona pora roku to wiosna"
+                                class="line_3">.</p>
+                    </div>
+                    <div class="colors">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRZw7o9DJEWoHeD9g?embed=1&width=1170&height=480"
+                            alt="4-Toru" style="width: 200px;">
+                        <audio src="./audio/159_t110_4.mp3" controls>159</audio>
+                        <p class="p20"> <input type="text" data-answer="Jego ulubiona pora roku to jesień"
+                                class="line_3">.</p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set5')">Check</button>
+                <button onclick="toggleHints('hints5')">Wskazówka</button>
+                <div id="hints5" style="display: none;">
+                    <p>1. Mama jest szczupła i niska.</p>
+                    <p>2. Tata ma brązowe oczy.</p>
+                    <p>3. Tata z zawodu jest informatykiem.</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/fd9d79d1995c49aba92fe477e7b2b562?themeId=62&templateId=2&fontStackId=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- end 5 -->
+            <!-- 6 -->
+            <h2>6. Proszę przeczytzć, co on zwykle robi. [507A6]</h2>
+            <audio src="./audio/160.mp3" controls>160</audio>
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRaUN3a2txFFVzU2g?embed=1&width=2548&height=1092"
+                    alt="507A6">
+            </div>
+
+
+            <!-- end 6 -->
+            <!-- 7 -->
+            <h2>7. Proszę podpisać symbole frazami a ćwiczenia 6. [507A7]</h2>
+            <div class="question-set" id="set7">
+                <div class="dialog italic displayFlex">
+                    <div class="raspisanie">
+                        <span>1. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRbYSF6ZraFCFu7BA?embed=1&width=382&height=348"
+                            alt="1" style="width: 100px; margin: 0 auto;"><br>
+                        <p class="p20 italic "><input type="text" data-answer="jest gorąco" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>2. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRcrXgVHfjp2RbHpA?embed=1&width=382&height=348"
+                            alt="2" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer=" jest ciepło" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>3. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRdFPaEXa2__jSv4w?embed=1&width=382&height=348"
+                            alt="3" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="jest zimno" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>4. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfReoIHf_vCfxPQT6g?embed=1&width=382&height=348 "
+                            alt="4" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20">
+                            <spzn class="blue">jest mróz</spzn>
+                        </p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>5. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRfXCGkqRkd-gG3lA?embed=1&width=382&height=348"
+                            alt="5" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="świeci słońce" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>6. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRgEXwTOqCs27lrmg?embed=1&width=382&height=348"
+                            alt="6" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="pada deszcz" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>7. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRhtOeNizv9w--_0A?embed=1&width=382&height=348"
+                            alt="7" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="pada śnieg" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>8. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRinb1sdP0XHA9N_Q?embed=1&width=382&height=348"
+                            alt="8" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="wieje wiatr" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>9. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRjhvl4C8xQjK7WwQ?embed=1&width=382&height=348"
+                            alt="9" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="jest burza" class="line_2"></p>
+                    </div>
+                    <div class="raspisanie">
+                        <span>10. </span><img
+                            src="https://1drv.ms/i/s!Av5Voug-ar1TgfRkSEyn9gKCSi68IQ?embed=1&width=382&height=348"
+                            alt="10" style="width: 100px;margin: 0 auto;"><br>
+                        <p class="p20"><input type="text" data-answer="jest pochmurno" class="line_2"></p>
+                    </div>
+                </div>
+                <button onclick="checkAnswers('set7')">Check</button>
+                <button onclick="toggleHints('hints7')">Wskazówka</button>
+                <div id="hints7" style="display: none;">
+                    <p>1 - jest gorąco</p>
+                    <p>2 - jest ciepło</p>
+                    <p>3 - jest zimno</p>
+                    <p>4 - jest mróz</p>
+                    <p>5 - świeci słońce</p>
+                    <p>6 - pada deszcz</p>
+                    <p>7 - pada śnieg</p>
+                    <p>8 - wieje wiatr</p>
+                    <p>9 - jest burza</p>
+                    <p>10. - jest pochmurno</p>
+                </div>
+            </div>
+            <!-- end 7 -->
+
+
+            <div class="two">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRlNYUrtSZldVzHBg?embed=1&width=940&height=1224" alt="507A9">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRmJwWVVMUbfFl6mg?embed=1&width=1086&height=1046" alt="">
+            </div>
+
+
+
+
+
+    </div>
+    <!-- script -->
+    <div style="margin-bottom: 5%;"></div>
+    <script src="../script.js"></script>
+    <script src="../scriptchexBox.js"></script>
+    <script src="../checkRadio.js"></script>
+    <script src="../wyborOtweta.js"></script>
+    </main>
+    </div>
+</body>
+
+</html>

@@ -161,6 +161,13 @@ p{
 .text20 input{
    font-size: 20px;
 }
+
+/* FON */
+.niebieski{
+   background-color: rgb(171, 220, 247);
+   border-radius: 10px;
+   padding: 3%;
+}
 /* =========== List Lesson ============== */
  .liLesson a{
     font-size: 20px;
@@ -479,6 +486,7 @@ th {
 }
 .question-set{
    width: 100%;
+   margin: 0 auto;
 }
 .vopros{
    font-weight: 800;
@@ -524,6 +532,7 @@ label{
    width: 100%;
    gap: 2px;
    margin-top: 3px;
+   align-items: flex-end;
 }
 button{
    background-color: aquamarine;
@@ -616,12 +625,15 @@ input {
    display: flex;
    flex-direction: column;
    padding: 1%;
+
 }
 .displayFlex{
    display: flex;
    gap: 2px;
    width: 1200px;
    align-items: flex-end;
+   gap: 3%;
+   flex-wrap: wrap;
 }
 .flex{
    display: flex;

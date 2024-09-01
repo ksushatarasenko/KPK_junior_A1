@@ -1,28 +1,50 @@
 <!-- pole dla wpisania -->
-<div class="question-set" id="set1">
+<div class="question-set" id="set2">
     <div class="dialog italic ">
         <div class="colors">
-            <p class="p italic ">A. Lukas, <span class="blue">lubisz</span> surfować po internecie?</p>
+            <p class="p20 italic ">- zielona, ale też niebieska jak woda i żółta jak słonce. => <span class="blue">lato</span></p>
         </div>
         <div class="colors">
-            <p class="p">B. Tak! Bardzo <input type="text" data-answer="lubię" class="line_1"> grać w gry
-                komputerowe.</p>
-        </div>
-        <div class="colors">
-            <p class="p">C. A wy? Co <input type="text" data-answer="lubicie" class="line_1"> robić?</p>
-        </div>
-        <div class="colors">
-            <p class="p">D. My? Bardzo dużo! <input type="text" data-answer="Lubimy" class="line_1"> czytać
-                książki, słuchać muzyki i rysować.</p>
+            <p class="p20">- bardzo zielona, ale też różowa, żółta, biała jak kwiaty. => <input type="text" data-answer="lubię" class="line_1"></p>
         </div>
     </div>
-    <button onclick="checkAnswers('set1')">Check</button>
-    <button onclick="toggleHints('hints1')">Wskazówka</button>
-                    <div id="hints1" style="display: none;">
-                        <p>1. Mama jest szczupła i niska.</p>
-                        <p>2. Tata ma brązowe oczy.</p>
-                        <p>3. Tata z zawodu jest informatykiem.</p>
-                    </div>
+    <button onclick="checkAnswers('set2')">Check</button>
+    <button onclick="toggleHints('hints2')">Wskazówka</button>
+    <div id="hints2" style="display: none;">
+        <p>1. Mama jest szczupła i niska.</p>
+        <p>2. Tata ma brązowe oczy.</p>
+        <p>3. Tata z zawodu jest informatykiem.</p>
+    </div>
+</div>
+<!-- tablica -->
+<div class="question-set" id="set3">
+    <table class="dialog italic ">
+        <tr >
+            <td><span class="weight">pora roku</span> <br>mianownik (kto?, co?)</td>
+            <td><span class="weight">kiedy?</span> <br>narzednik (kim?, czim? (коли?))</td>
+        </tr>
+        <tr>
+            <td>wiosna</td>
+            <td><input type="text" data-answer="wiosną" class="line_1"></td>
+        </tr>
+        <tr>
+            <td>lato</td>
+            <td><input type="text" data-answer="latem" class="line_1"></td>
+        </tr>
+        <tr>
+            <td>jesień</td>
+            <td><span class="blue">jesieni</span><span class="red">ą</span></td>
+        </tr>
+        <tr>
+            <td>zima</td>
+            <td><input type="text" data-answer="zimą" class="line_1"></td>
+        </tr>
+    </table>
+    <button onclick="checkAnswers('set3')">Check</button>
+    <button onclick="toggleHints('hints3')">Wskazówka</button>
+    <div id="hints3" style="display: none;">
+            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRUYFZoEPE2GLQDNg?embed=1&width=2440&height=228" alt="poryRoku">
+    </div>
 </div>
 <!-- ż -->
  <!-- &nbsp;  probel -->
@@ -54,61 +76,7 @@
 
 <!-- -------------------------------------------------------- -->
 <!-- RADIO -->
- <!-- script -->
- // radio label
- function checkRadio(taskId) {
-    // Объект с правильными ответами для каждого задания по его id
-    const correctAnswers = {
-        task1: {
-            question1: '2',
-            question2: '2',
-            question3: '2',
-            question4: '2',
-            question5: '3',
-            question6: '1',
-        }
-    };
-
-    let allCorrect = true;
-
-    // Проверяем, есть ли корректные ответы для данного задания
-    if (correctAnswers[taskId]) {
-        const answers = correctAnswers[taskId];
-
-        // Перебираем все вопросы для данного задания
-        for (const [question, correctValue] of Object.entries(answers)) {
-            const selectedAnswer = document.querySelector(`#${taskId} input[name="${question}"]:checked`);
-            const taskElement = document.querySelector(`#${taskId} input[name="${question}"]`).closest('.task');
-
-            if (selectedAnswer) {
-                if (selectedAnswer.value === correctValue) {
-                    taskElement.classList.add('correct');
-                    taskElement.classList.remove('incorrect');
-                } else {
-                    taskElement.classList.add('incorrect');
-                    taskElement.classList.remove('correct');
-                    allCorrect = false;
-                }
-            } else {
-                // Если пользователь не выбрал вариант ответа
-                taskElement.classList.add('incorrect');
-                taskElement.classList.remove('correct');
-                allCorrect = false;
-            }
-        }
-    } else {
-        console.error(`Нет правильных ответов для задания с id: ${taskId}`);
-        return;
-    }
-
-    if (allCorrect) {
-        alert("Все ответы правильные!");
-    } else {
-        alert("Есть ошибки, попробуйте снова.");
-    }
-}
-
- <!-- html -->
+ 
  <div>
     <div id="task6">
         <div class="task">
