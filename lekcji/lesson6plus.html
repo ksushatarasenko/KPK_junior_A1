@@ -159,7 +159,8 @@
                                         class="line_2">. Jego ulubiony <input type="text" data-answer="film"
                                         class="line_1"> to „Transformers”. Ma rodzeństwo, dwóch starszych braci: brata
                                     <input type="text" data-answer="Filipa" class="line_1"> i brata <input type="text"
-                                        data-answer="Roberta" class="line_1">.</p>
+                                        data-answer="Roberta" class="line_1">.
+                                </p>
                             </div>
                         </div>
                         <button onclick="checkAnswers('set5')">Check</button>
@@ -208,53 +209,54 @@
                         <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">1. Agata: </p>
-                                <p class="p20 option" data-index="0">&nbsp;Kulesza | </p>
-                                <p class="p20 option" data-index="1" style="text-decoration: underline;">&nbsp;Kulesia</p>
+                                <p class="p20 option" data-index="0"  style="text-decoration: underline;">&nbsp;Kulesza | </p>
+                                <p class="p20 option" data-index="1">&nbsp;Kulesia
+                                </p>
                             </div>
                         </div>
                         <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">2. Agnieszka: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Grochowska | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Groszowska</p>
+                                <p class="p20 option" data-index="1">&nbsp;Groszowska</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="0">
+                        <div class="question" data-correct="1">
                             <div class="displayFlex italic">
                                 <p class="p20">3. Borys: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Czyc | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Szyc</p>
+                                <p class="p20 option" data-index="1">&nbsp;Szyc</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="0">
+                        <div class="question" data-correct="1">
                             <div class="displayFlex italic">
                                 <p class="p20">4. Joanna: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Żabczyńska | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Jabłczyńska</p>
+                                <p class="p20 option" data-index="1">&nbsp;Jabłczyńska</p>
                             </div>
                         </div>
                         <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">5. Magdalena: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Różczka | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Różecka</p>
+                                <p class="p20 option" data-index="1">&nbsp;Różecka</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="0">
+                        <div class="question" data-correct="1">
                             <div class="italic">
                                 <p class="p20">6. Małgorzata: </p>
                                 <div class="displayFlex">
                                     <p class="p20 option" data-index="0">&nbsp;Koziuchowska | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Kożuchowska</p>
+                                    <p class="p20 option" data-index="1">&nbsp;Kożuchowska</p>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">7. Marcin: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Kowalczyk | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Kowalcik</p>
+                                <p class="p20 option" data-index="1">&nbsp;Kowalcik</p>
                             </div>
                         </div>
                         <div class="question" data-correct="0">
@@ -262,34 +264,47 @@
                                 <p class="p20">8. Mateusz: </p>
                                 <div class="displayFlex">
                                     <p class="p20 option" data-index="0">&nbsp;Kościukiewicz | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Koszczukiewicz</p>
+                                    <p class="p20 option" data-index="1">&nbsp;Koszczukiewicz</p>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="question" data-correct="0">
+                        <div class="question" data-correct="1">
                             <div class="displayFlex italic">
                                 <p class="p20">9. Paweł: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Malaszyński | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Małaszyński</p>
+                                <p class="p20 option" data-index="1">&nbsp;Małaszyński</p>
                             </div>
                         </div>
                         <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">10. Robert: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Więckiewicz| | </p>
-                                <p class="p20 option" data-index="1" >&nbsp;Więskiewicz</p>
+                                <p class="p20 option" data-index="1">&nbsp;Więskiewicz</p>
                             </div>
                         </div>
                         <button class="checkAnswers">Sprawdź</button>
+                        <button onclick="toggleHints('hints81')">Wskazówka</button>
+                        <div id="hints81" style="display: none;">
+                            <p>1. Agata: Kulesza</p>
+                            <p>2. Agnieszka: Grochowska</p>
+                            <p>3. Borys: Szyc</p>
+                            <p>4. Joanna: Jabłczyńska</p>
+                            <p>5. Magdalena: Różczka</p>
+                            <p>6. Małgorzata: Kożuchowska</p>
+                            <p>7. Marcin: Kowalczyk</p>
+                            <p>8. Mateusz: Kościukiewicz</p>
+                            <p>9. Paweł: Małaszyński</p>
+                            <p>10. Robert: Więckiewicz</p>
+                        </div>
                         <p class="result"></p>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3>PIOSENKARZ/ PIOSENKARKA</h3>
                     <div class="questions">
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">1. Agnieszka: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Chylińska | </p>
@@ -310,14 +325,14 @@
                                 <p class="p20 option" data-index="1">&nbsp; Mozil</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">4. Edyta: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Górniak | </p>
-                                <p class="p20 option" data-index="1" >&nbsp; Gorniak</p>
+                                <p class="p20 option" data-index="1">&nbsp; Gorniak</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">5. Dawid: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Podsiadło | </p>
@@ -325,14 +340,22 @@
                             </div>
                         </div>
                         <button class="checkAnswers">Sprawdź</button>
+                        <button onclick="toggleHints('hints82')">Wskazówka</button>
+                        <div id="hints82" style="display: none;">
+                            <p>1. Agnieszka: Chylińska</p>
+                            <p>2. Ania: Dąbrowska</p>
+                            <p>3. Czesław: Mozil</p>
+                            <p>4. Edyta: Górniak</p>
+                            <p>5. Dawid: Podsiadło</p>
+                        </div>
                         <p class="result"></p>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3>SPORTOWIEC</h3>
                     <div class="questions">
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">1. Anna: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Rogowska | </p>
@@ -353,14 +376,14 @@
                                 <p class="p20 option" data-index="1">&nbsp;Błaszczykowski</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">4. Jerzy: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Janowicz | </p>
                                 <p class="p20 option" data-index="1">&nbsp;Janowich</p>
                             </div>
                         </div>
-                        <div class="question" data-correct="1">
+                        <div class="question" data-correct="0">
                             <div class="displayFlex italic">
                                 <p class="p20">5. Kamil: </p>
                                 <p class="p20 option" data-index="0">&nbsp;Stoch | </p>
@@ -368,10 +391,18 @@
                             </div>
                         </div>
                         <button class="checkAnswers">Sprawdź</button>
+                        <button onclick="toggleHints('hints83')">Wskazówka</button>
+                        <div id="hints83" style="display: none;">
+                            <p>1. Anna: Rogowska</p>
+                            <p>2. Anita: Włodarczyk</p>
+                            <p>3. Jakub: Błaszczykowski</p>
+                            <p>4. Jerzy: Janowicz</p>
+                            <p>5. Kamil: Stoch</p>
+                        </div>
                         <p class="result"></p>
                     </div>
                 </div>
-                
+
             </div>
             <!-- end 8 -->
 

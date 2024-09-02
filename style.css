@@ -210,6 +210,10 @@ p{
   width: 100%;
   height: 100%;
 }
+.twoGrid{
+   display: grid;
+   gap: 2%;
+}
 .two_1{
    width: 100%;
    display: flex;

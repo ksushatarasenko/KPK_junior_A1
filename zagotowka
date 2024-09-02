@@ -16,7 +16,7 @@
         <p>3. Tata z zawodu jest informatykiem.</p>
     </div>
 </div>
-<!-- tablica -->
+<!-- tablica wpisać-->
 <div class="question-set" id="set3">
     <table class="dialog italic ">
         <tr >
@@ -101,6 +101,37 @@
     <button onclick="checkRadio('task6')">Chek</button>
 </div>
 <!--  -->
+
+<!-- Radio tablica -->
+<table class="italic table" id="task507A4">
+    <tr>
+        <th><img src="https://1drv.ms/i/s!Av5Voug-ar1TgfRVeYeInCabGno76w?embed=1&width=1308&height=526"
+                alt="507A4" style="width: 250px;"></th>
+        <td class="td">WIOSNA</td>
+        <td class="td">LATEM</td>
+        <td class="td">JESIENIĄ</td>
+        <td class="td">ZIMĄ</td>
+    </tr>
+    <tr class="task">
+        <td>1. Mamy wakacje.</td>
+        <div class="options">
+            <td><label><input type="radio" name="question1" value="1"></label></td>
+            <td><label><input type="radio" name="question1" value="2"></label></td>
+            <td><label><input type="radio" name="question1" value="3"></label></td>
+            <td><label><input type="radio" name="question1" value="4"></label></td>
+        </div>
+    </tr>
+    <tr class="task">
+        <td>6. Zaczyna się nowy rok szkolny.</td>
+        <div class="options">
+            <td><label><input type="radio" name="question6" value="1"></label></td>
+            <td><label><input type="radio" name="question6" value="2"></label></td>
+            <td><label><input type="radio" name="question6" value="3"></label></td>
+            <td><label><input type="radio" name="question6" value="4"></label></td>
+        </div>
+    </tr>
+</table>
+<button onclick="checkRadio('task507A4')">Chek</button>
 
 ------- checkbox ----
 <table id="task1">
