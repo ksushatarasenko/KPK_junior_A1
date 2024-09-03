@@ -191,7 +191,7 @@
                 </label></div>
             </div>
         </div>
-        <button id="checkCheckbox">Sprawdź</button>
+        <button onclick="checkCheckbox('task1')">Chek</button>
     
 
 
