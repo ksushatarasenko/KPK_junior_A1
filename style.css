@@ -526,6 +526,14 @@ label{
    width: 50px;
    font-size: 20px;
 }
+.line7{
+   width: 35px;
+   height: 35px; /* Сделаем высоту равной ширине */
+   border-radius: 50%; /* Применяем круговое округление */
+   border: 1px solid #000; /* Добавляем границу для визуализации */
+   text-align: center; /* Текст по центру кружка */
+   padding: 0;
+}
 .dialog{
    width: 100%;
 }
