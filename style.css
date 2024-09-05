@@ -135,6 +135,11 @@ p{
    color: blue;
 }
 
+.slowa{
+   width: 70%;
+   margin: 0 auto;
+   text-align: center;
+}
 .coral{
    color: rgb(239, 103, 53);
 }
