@@ -8,12 +8,16 @@
             <p class="p20">- bardzo zielona, ale też różowa, żółta, biała jak kwiaty. => <input type="text" data-answer="lubię" class="line_1"></p>
         </div>
     </div>
-    <button onclick="checkAnswers('set2')">Check</button>
-    <button onclick="toggleHints('hints2')">Wskazówka</button>
-    <div id="hints2" style="display: none;">
-        <p>1. Mama jest szczupła i niska.</p>
-        <p>2. Tata ma brązowe oczy.</p>
-        <p>3. Tata z zawodu jest informatykiem.</p>
+</div>
+<div class="flex">
+    <button onclick="checkAnswers('set6')">Check</button>
+    <div>
+        <button onclick="toggleHints('hints6')">Wskazówka</button>
+        <div id="hints6" style="display: none;">
+            <p>1. Mama jest szczupła i niska.</p>
+            <p>2. Tata ma brązowe oczy.</p>
+            <p>3. Tata z zawodu jest informatykiem.</p>
+        </div>
     </div>
 </div>
 <!-- tablica wpisać-->
@@ -48,6 +52,8 @@
 </div>
 <!-- ż -->
  <!-- &nbsp;  probel -->
+
+ <h3 class="italic "> <span class="coral">Toru</span> | <span class="coral">Lukas</span> | <span class="coral">Sophie</span> | <span class="coral">Maja</span></h3>
 
 <!-- wybor Otweta -->
 

@@ -130,6 +130,9 @@ p{
 .green{
    color: green;
 }
+.violet{
+   color: rgb(105, 14, 190);
+}
 .b{
    font-weight: 900;
    color: blue;
@@ -238,7 +241,7 @@ p{
  .three img{
     width: 100%;  
  }
- .thre p{
+ .three p{
    width: 100%;
  }
  .three div{
@@ -531,13 +534,8 @@ label{
    width: 50px;
    font-size: 20px;
 }
-.line7{
-   width: 35px;
-   height: 35px; /* Сделаем высоту равной ширине */
-   border-radius: 50%; /* Применяем круговое округление */
-   border: 1px solid #000; /* Добавляем границу для визуализации */
-   text-align: center; /* Текст по центру кружка */
-   padding: 0;
+.line_7{
+   width: 400px;
 }
 .dialog{
    width: 100%;
@@ -604,6 +602,11 @@ input {
    /* Текст по центру */
 }
 
+.chek{
+   width: 150px;
+   text-align: center;
+   padding: 2px;
+}
 /* end interactive */
 /* radio label */
 .task {
@@ -655,7 +658,9 @@ input {
 .flex{
    display: flex;
    gap: 2%;
+   align-items: center;
 }
+
 .przerewod{
    margin: 0;
    padding: 0.2%;
