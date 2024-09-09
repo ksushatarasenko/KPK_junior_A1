@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №9A</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 </h1>
+            <h2>9-A / Moje miasto</h2>
+            <h3>- przyimki: za, przed,  między, obok, koło, naprzeciwko, na wprost<br> opis miasta;
+                podawanie lokalizacji</h3>
+            <!-- nowy słowa-->
+            <a href="https://quizlet.com/pl/939786915/krok-po-kroku-junior-1-9a-flash-cards/?i=4wzil5&x=1jqt"
+                target="_blank">NOWY SŁOWA >>></a>
+            <div class="image">
+                <h2>Przypadki w języku polskim</h2>
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfUFFqtH22egcpM3XA?embed=1&width=946&height=952"
+                    alt="przypadki" style="width: 40%;">
+            </div>
+            <!-- start -->
+            <!-- 1 -->
+            <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfY0DkvMN4eFE2MESA?embed=1&width=2096&height=476" alt="509A1">
+            </div>
+            <!-- end 1 -->
+            <!-- 2 -->
+             <h2>2. Co to jest? Proszę dopasować słowa do obiektów w mieście. [509A2]</h2>
+             <audio src="./audio/194.mp3" controls>194</audio>
+            
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/3d6e758c0bc242a5a4d3608daf3f2978?themeId=60&templateId=38&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- end 2 -->
+             <!-- 3-4  -->
+              <div class="two">
+                <div>
+                    <h3>3. Proszę posłuchać dźwięków i ponumerować miejca. [509A3]</h3>
+                    <audio src="./audio/195.mp3" controls>195</audio>
+                    <div class="question-set" id="set3">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">a. <input type="text" data-answer="3" class="line_5"> basen</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">b. <input type="text" data-answer="2" class="line_5"> szpital</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">c. <input type="text" data-answer="7" class="line_5"> dworzec</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">d. <input type="text" data-answer="5" class="line_5"> park</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">e. <span class="blue" >1</span> sklep</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">f. <input type="text" data-answer="8" class="line_5"> kino</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">g. <input type="text" data-answer="6" class="line_5"> stadion sportowy</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">h. <input type="text" data-answer="4" class="line_5"> poczta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set3')">Check</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>4. Jakie to miejsce? [509A4]</h3>
+                    <div class="question-set" id="set4">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">a. możemy tam oglądać sztukę: jbrazy i zdjęcia => <span class="blue">muzeum</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">b. kupujemy tam różne produkty: mleko, spodnie, komputer... => <input type="text" data-answer="sklep" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">c. czekamy tam na tramwaj albo autobus => <input type="text" data-answer="przystanek" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">d. oglądamy tam speltakl albo operę => <input type="text" data-answer="teatr" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">e. idziemy tam, kiedy chcemy wysłać list, pocztówkę albo paczkę => <input type="text" data-answer="poczta" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">f. kupujemy tam małe rzeczy: gazetę bilet albo wodę => <input type="text" data-answer="kiosk" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">g. tam pływamy, jest dużo wody => <input type="text" data-answer="basen" class="line_2"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">h. autobus i pociąg zaczynają tam i kończą kurs => <input type="text" data-answer="dworzec" class="line_2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set4')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints4')">Wskazówka</button>
+                            <div id="hints4" style="display: none;">
+                                <p>a. muzeum</p>
+                                <p>b. sklep</p>
+                                <p>c. przystanek</p>
+                                <p>d. teatr</p>
+                                <p>e. poczta</p>
+                                <p>f. kiosk</p>
+                                <p>g. basen</p>
+                                <p>h. dworzec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+             <!-- end 3-4 -->
+              <!-- 5 -->
+               <h2>5. Proszę przeczytać tekst i zdecydować prawda (P) czy nieprawda (N)? [509A5]</h2>
+               <audio src="./audio/196.mp3" controls>196</audio>
+               <div class="two">
+                    <div class="image">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfY9mSLM9S6VrLEY2Q?embed=1&width=1202&height=1640" alt="509A5-1">
+                    </div>
+                    <div>
+                        <div class="image">
+                            <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfY8i6gRRDrUYEgqzA?embed=1&width=1156&height=608" alt="509A5-2">
+                        </div>
+                        <div style="width: 100%;">
+                            <div id="task509A5">
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">1. W mieście Adama jest dworzec autobusowy i kolejowy.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question1" value="1"> P</label>
+                                            <label><input type="radio" name="question1" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">2. Adam do domu jeździ tramwajem.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question2" value="1"> P</label>
+                                            <label><input type="radio" name="question2" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">3. W kiosku możesz kupić gazety.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question3" value="1"> P</label>
+                                            <label><input type="radio" name="question3" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">4. Numer tramwaju to 112.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question4" value="1"> P</label>
+                                            <label><input type="radio" name="question4" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">5. W parku możesz uprawiać sport.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question5" value="1"> P</label>
+                                            <label><input type="radio" name="question5" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">6. W weekend jest mecz na stadionie.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question6" value="1"> P</label>
+                                            <label><input type="radio" name="question6" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">7. Basen jest otwarty zimą.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question7" value="1"> P</label>
+                                            <label><input type="radio" name="question7" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">8. Adam często chodzi do teatru.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question8" value="1"> P</label>
+                                            <label><input type="radio" name="question8" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">9. Na poczcie możesz kupić wodę</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question9" value="1"> P</label>
+                                            <label><input type="radio" name="question9" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="options">
+                                        <p class="p20">10. Charakterystyczny punkt miasta to poczta.</p>
+                                        <div class="boxRadio" style="width: 30%;">
+                                            <label><input type="radio" name="question10" value="1"> P</label>
+                                            <label><input type="radio" name="question10" value="2"> N</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="checkRadio('task509A5')">Chek</button>
+                        </div>
+                    </div>
+               </div>
+              <!-- end 5 -->
+            <!-- UWAGA -->
+               <div class="image" style="width: 70%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfY-WjD0cnUsGlyGQg?embed=1&width=2132&height=1022" alt="uwaga1">
+               </div>
+            <!-- end UWAGA -->
+            <!-- PRAWILO -->
+             <div class="two">
+                <div class="image" style="width: 130%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfN7usA6XmgP3zr16A?embed=1&width=1546&height=1030" alt="narzędnik">
+                </div>
+                <div class="image" style="width: 130%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfV7sd4uf_qGBAh4Gw?embed=1&width=2004&height=1404" alt="dopełniacz">
+                </div>
+             </div>
+             <div class="two">
+                <div class="image" style="width: 130%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfN9uyClR60Kj5_wEQ?embed=1&width=1824&height=1226" alt="narzędnik-2" class="zoomable">
+                </div>
+                <div class="image" style="width: 130%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfV8qNOXU0pbNvLmzg?embed=1&width=2438&height=1648" alt="dopełniacz-2" class="zoomable">
+                </div>
+             </div>
+            <!-- end PRAWILO -->
+            <!-- 6-7 -->
+             <div class="two">
+                <div>
+                    <h3>6. Gdzie to jest? [509A6]</h3>
+                    <div class="question-set" id="set6">
+                        <div class="dialog">
+                            <div class="colors">
+                                <p class="p20">▶️ t<span class="blue">u</span>t<span class="blue">a</span>j</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ t<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="m" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ p<input type="text" data-answer="o" class="line_5"> &nbsp;&nbsp;p<input type="text" data-answer="r" class="line_5"><input type="text" data-answer="a" class="line_5">w<input type="text" data-answer="e" class="line_5"><input type="text" data-answer="j" class="line_5"> &nbsp;&nbsp;s<input type="text" data-answer="t" class="line_5">r<input type="text" data-answer="o" class="line_5"><input type="text" data-answer="n" class="line_5">e</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ p<input type="text" data-answer="o" class="line_5"> &nbsp;&nbsp;l<input type="text" data-answer="e" class="line_5">w<input type="text" data-answer="e" class="line_5">j &nbsp;&nbsp;<input type="text" data-answer="s" class="line_5">t<input type="text" data-answer="r" class="line_5">o<input type="text" data-answer="n" class="line_5"><input type="text" data-answer="i" class="line_5">e</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ n<input type="text" data-answer="a" class="line_5"> &nbsp;&nbsp;w<input type="text" data-answer="m" class="line_5"><input type="text" data-answer="a" class="line_5"><input type="text" data-answer="a" class="line_5">s<input type="text" data-answer="a" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ n<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="m" class="line_5">r<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="a" class="line_5">c<input type="text" data-answer="a" class="line_5">w<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="a" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ z<input type="text" data-answer="a" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ o<input type="text" data-answer="a" class="line_5">o<input type="text" data-answer="m" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ <input type="text" data-answer="a" class="line_5">o<input type="text" data-answer="m" class="line_5">o</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ b<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="m" class="line_5">s<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="a" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ m<input type="text" data-answer="a" class="line_5">ę<input type="text" data-answer="m" class="line_5">z<input type="text" data-answer="a" class="line_5"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">▶️ p<input type="text" data-answer="a" class="line_5"><input type="text" data-answer="m" class="line_5"><input type="text" data-answer="a" class="line_5">d</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set6')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints6')">Wskazówka</button>
+                            <div id="hints6" style="display: none;">
+                                <p>1. Mama jest szczupła i niska.</p>
+                                <p>2. Tata ma brązowe oczy.</p>
+                                <p>3. Tata z zawodu jest informatykiem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- KONEC -->
+
+            <div style="margin-bottom: 5%;"></div>
+
+        </main>
+    </div>
+    <!-- script -->
+
+    <script src="../script.js"></script>
+    <script src="../scriptchexBox.js"></script>
+    <script src="../wyborOtweta.js"></script>
+    <script src="../checkRadio.js"></script>
+</body>
+
+</html>

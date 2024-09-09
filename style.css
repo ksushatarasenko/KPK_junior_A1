@@ -576,7 +576,7 @@ button{
 
 .option {
    cursor: pointer;
-   margin-top: 2%;
+   margin-top: 1%;
   
 }
 
@@ -625,19 +625,13 @@ input {
    justify-content: space-between;
    
 }
-.option.correct {
-   background-color: #c8e6c9; /* Зелёный фон для правильного ответа */
-}
 
-.option.incorrect {
-   background-color: #ffcdd2; /* Красный фон для неправильного ответа */
-}
 .boxRadio{
    margin-right: 1px;
    width: 30%;
    text-align: right;
    display: flex;
-
+   justify-content: flex-end;
 }
 
 /* ---------------- */
