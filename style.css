@@ -172,9 +172,20 @@ p{
 
 /* FON */
 .niebieski{
-   background-color: rgb(171, 220, 247);
-   border-radius: 10px;
+   background-color: rgb(240, 168, 92);
+   border-radius: 20px;
    padding: 3%;
+}
+
+.orang{
+   background-color: rgb(243, 197, 149);
+   padding: 3%;
+}
+
+.zieleny{
+   background-color: rgb(203, 242, 213);
+   border-radius: 15px;
+   padding: 2%;
 }
 /* =========== List Lesson ============== */
  .liLesson a{
@@ -551,10 +562,11 @@ label{
 }
 button{
    background-color: aquamarine;
-   padding: 1%;
    font-size: 18px;
-   margin: 4% auto;
+   margin: 3% 3%;
    cursor: pointer;
+   width: 120px;
+   height: 30px;
 }
 .correct {
    background-color: green;
@@ -615,7 +627,7 @@ input {
 .task img {
    display: block;
    margin-bottom: 10px;
-   width: 450px; /* Примерный размер, можете изменить */
+   width: 100%; /* Примерный размер, можете изменить */
    height: auto;
 }
 .options {
