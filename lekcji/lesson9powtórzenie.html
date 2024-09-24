@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №9powtórzenie</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Krok po kroku - junior 1 </h1>
+            <h2>9-Powtórzenie</h2>
+            <div class="image">
+                <h2>Przypadki w języku polskim</h2>
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfUFFqtH22egcpM3XA?embed=1&width=946&height=952"
+                    alt="przypadki" style="width: 40%;">
+            </div>
+            <!-- start -->
+            <!-- 1-2 -->
+            <div class="two">
+                <div>
+                    <h3>1. Co to jest?</h3>
+                    <div class="question-set" id="set1">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">a. lekarz + chory + 112 <span class="blue">szpital</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">b. film + bilet + ekran <input type="text" data-answer="kino"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">c. autobus + bilet + czekać <input type="text" data-answer="przystanek"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">d. woda + pływać + kraul <input type="text" data-answer="basen"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">e. uczyć się + tablica + uczeń <input type="text" data-answer="szkoła"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">f. spacer + drzewo + zielony <input type="text" data-answer="park"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">g. batonik + kupować + kasa <input type="text" data-answer="sklep"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">h. mecz + piłka nóżna + sport <input type="text" data-answer="stadion"
+                                        class="line_1"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">i. obraz + sztuka + artysta <input type="text" data-answer="muzeum"
+                                        class="line_1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set1')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints1')">Wskazówka</button>
+                            <div id="hints1" style="display: none;">
+                                <p>a. lekarz + chory + 112 → szpital</p>
+                                <p>b. film + bilet + ekran → kino </p>
+                                <p>c. autobus + bilet + czekać → przystanek </p>
+                                <p>d. woda + pływać + kraul → basen</p>
+                                <p>e. uczyć się + tablica + uczeń → szkoła</p>
+                                <p>f. spacer + drzewo + zielony → park </p>
+                                <p>g. batonik + kupować + kasa → sklep</p>
+                                <p>h. mecz + piłka nożna + sport → stadion </p>
+                                <p>i. obraz + sztuka + artysta → muzeum </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>2. Gdzie to jest?</h3>
+                    <div class="image" style="width: 130%;margin-left: -30%;">
+                        <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfgb9WWsxLLVvKPtzQ?embed=1&width=1860&height=1018"
+                            alt="509P2">
+                    </div>
+                    <div class="question-set" id="set2">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p18 italic ">1. Gdzie jest koosk? <br><span class="blue">Kiosk jest obok
+                                        przystanku,naprzeciwko poczty.</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p18">2. Gdzie jest stadion? <br> <input type="text"
+                                        data-answer="Stadion jest przy ul. Sportowej, za parkiem, koło basenu."
+                                        class="line_3"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p18">3. Gdzie jest sklep? <br> <input type="text"
+                                        data-answer="Sklep jest naprzeciwko przystanku autobusowego, obok poczty."
+                                        class="line_3"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p18">4. Gdzie jest poczta?<br> <input type="text"
+                                        data-answer="Poczta jest naprzeciwko kiosku, obok sklepu." class="line_3"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p18">5. Gdzie jest muzeum? <br> <input type="text"
+                                        data-answer="Muzeum jest obok teatru Bajka, przy ul. Teatralnej."
+                                        class="line_3"></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p18">6. Gdzie jest dworzec autobusowy?<br> <input type="text"
+                                        data-answer="Dworzec autobusowy jest mięzdy sklepem a szkoły, przy ul. Szkolna."
+                                        class="line_3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set2')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints2')">Wskazówka</button>
+                            <div id="hints2" style="display: none;">
+                                <p>1. Kiosk jest obok przystanku,naprzeciwko poczty.</p>
+                                <p>2. Stadion jest przy ul. Sportowej, za parkiem, koło basenu.</p>
+                                <p>3. Sklep jest naprzeciwko przystanku autobusowego, obok poczty.</p>
+                                <p>4. Poczta jest naprzeciwko kiosku, obok sklepu.</p>
+                                <p>5. Muzeum jest obok teatru Bajka, przy ul. Teatralnej.</p>
+                                <p>6. Dworzec autobusowy jest między sklepem a szkołą, przy ul. Szkolnej.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="two">
+                <div class="image" style="margin-top: -30%;">
+                    <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfgcaYH1dXJmSkh1fg?embed=1&width=938&height=914"
+                        alt="509P5">
+                </div>
+                <div>
+                    <h3>6. Przepraszam, jak dojść ... [509P6]</h3>
+                    <div class="question-set" id="set6">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">a. <span class="blue">do</span> kina?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">b. <input type="text" data-answer="na" class="line_6"> pocztę?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">c. <input type="text" data-answer="na" class="line_6"> basen?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">d. <input type="text" data-answer="do" class="line_6"> szkoły?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">e. <input type="text" data-answer="do" class="line_6"> kiosku?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">f. <input type="text" data-answer="na" class="line_6"> przystanek?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">g. <input type="text" data-answer="do" class="line_6"> muzeum?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">h. <input type="text" data-answer="na" class="line_6"> dworzec?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set6')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints6')">Wskazówka</button>
+                            <div id="hints6" style="display: none;">
+                                <p>a. do kina?</p>
+                                <p>b. na pocztę?</p>
+                                <p>c. na basen?</p>
+                                <p>d. do szkoły?</p>
+                                <p>e. do kiosku?</p>
+                                <p>f. na przystanek?</p>
+                                <p>g. do muzeum?</p>
+                                <p>h. na dworzec?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7-8 -->
+            <div class="two">
+                <div>
+                    <h3>7. Proszę uzupełnić dialog. [509P7]</h3>
+                    <div class="question-set" id="set7">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">A:</span> <span
+                                        class="blue">Przepraszam</span>, jak <input type="text" data-answer="dojść" class="line_2"> na stadion?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">B:</span> Proszę iść <input type="text" data-answer="prosto" class="line_2">, a potem <input type="text" data-answer="skręcić" class="line_2"> w prawo.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">A:</span> Dziękuję <input type="text" data-answer="bardzo" class="line_2">!</p>
+                            </div><hr>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">C:</span> Przepraszam, czy <input type="text" data-answer="wie" class="line_2">pani, <input type="text" data-answer="gdzie" class="line_2"> jest poczta.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">D:</span> Tak, proszę skręcić w <input type="text" data-answer="lewo" class="line_2">, a potem <input type="text" data-answer="przejść" class="line_2"> przez ulicę. Poczta jest na wprost.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">C:</span> <input type="text" data-answer="Dziękuję" class="line_2">!</p>
+                            </div><hr>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">E:</span> Przepraszam, czy to jest droga do kina?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">F:</span> Nie, proszę <input type="text" data-answer="zawrócić" class="line_2">! Kino jest po  <input type="text" data-answer="prawej" class="line_2"> stronie, a nie po lewej.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">E:</span> Ojej, dziękuję!</p>
+                            </div><hr>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">G:</span> Przepraszem, czy to jest droga do teatru? </p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">H:</span> Nie <input type="text" data-answer="wiem" class="line_2">, nie jestem <input type="text" data-answer="stąd" class="line_2">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20 italic "><span class="coral weight">G:</span> Rozumiem, dziękuję.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set7')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints7')">Wskazówka</button>
+                            <div id="hints7" style="display: none;">
+                                <p>A: Przepraszam, jak <b>dojść</b> na stadion?</p>
+                                <p>B: Proszę iść <b>prosto</b>, a potem <b>skręcić</b> w prawo.</p>
+                                <p>A: Dziękuję <b>bardzo</b>!</p><hr>
+                                <p>C: Przepraszam, czy <b>wie</b> pani, <b>gdzie</b> jest poczta?</p>
+                                <p>D: Tak, proszę skręcić w <b>lewo</b>, a potem <b>przejść</b> przez ulicę. Poczta jest na wprost.</p>
+                                <p>C: <b>Dziękuję</b>!</p><hr>
+                                <p>E: Przepraszam, czy to jest droga do kina?</p>
+                                <p>F: Nie, proszę <b>zawrócić</b>! Kino jest po <b>prawej</b> stronie, a nie po lewej.</p>
+                                <p>E: Ojej, dziękuję!</p><hr>
+                                <p>G: Przepraszam, czy to jest droga do teatru?</p>
+                                <p>H: Nie <b>wiem</b>, nie jestem <b>stąd</b>.</p>
+                                <p>G: Rozumiem, dziękuję.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>8. Proszę skorygować zdania. [509P8]</h3>                    
+                    <div class="question-set" id="set8" style="margin-left: 5%;">
+                        <div class="dialog italic ">
+                            <div class="colors">
+                                <p class="p20 italic ">1. Julia często jedzie na rolkach. <br><span class="blue">Julia często jedzi na rolkach.</span></p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">2. Codziennie chodzimy autobusem do szkoły. <br> <input type="text" data-answer="Codziennie jeździmy autobusem do szkoły" class="line_7">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">3. Jutro chodzę pieszo do koleżanki. <br> <input type="text" data-answer="Jutro jadę pieszo do koleżanki" class="line_7">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">4. Jak często idziesz do kina? <br> <input type="text" data-answer="Jak często jeździsz do kina" class="line_7">?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">5. Artem i Lukas idą tam rowerem! <br> <input type="text" data-answer="Artem i Lukas jadą tam rowerem" class="line_7">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">6. Lubicie jechać na nartach? <br> <input type="text" data-answer="Lubicie jeździć na nartach" class="line_7">?</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">7. Toru chodzi dziciaj do dentysty. <br> <input type="text" data-answer="Toru jedzie dzisiaj do dentysty" class="line_7">.</p>
+                            </div>
+                            <div class="colors">
+                                <p class="p20">8. Zwykle jeździmy do szkoły pieszo. <br> <input type="text" data-answer="Zwykle chodzimy do szkoły pieszo" class="line_7">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button onclick="checkAnswers('set8')">Check</button>
+                        <div>
+                            <button onclick="toggleHints('hints8')">Wskazówka</button>
+                            <div id="hints8" style="display: none;">
+                                <p>1. Julia często <bjeździ></bjeździ> na rolkach.</p>
+                                <p>2. Codziennie <b>jeździmy</b> autobusem do szkoły.</p>
+                                <p>3. Jutro <b>jadę</b> pieszo do koleżanki.</p>
+                                <p>4. Jak często <b>jeździsz</b> do kina?</p>
+                                <p>5. Artem i Lukas <b>jadą</b> tam rowerem.</p>
+                                <p>6. Lubicie <b>jeździć</b> na nartach?</p>
+                                <p>7. Toru <b>jedzie</b> dzisiaj do dentysty.</p>
+                                <p>8. Zwykle <b>chodzimy</b> do szkoły pieszo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- end 7-8 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- KONEC -->
+
+            <div style="margin-bottom: 5%;"></div>
+
+        </main>
+    </div>
+    <!-- script -->
+
+    <script src="../script.js"></script>
+    <script src="../scriptchexBox.js"></script>
+    <script src="../wyborOtweta.js"></script>
+    <script src="../checkRadio.js"></script>
+    <script>
+        // Функция проверки, которая вызывает две другие с разными ID
+        function checkFunctions(set1, id2) {
+            checkAnswers('set1');  // Вызов первой функции с ID первого элемента
+            secondFunction(id2); // Вызов второй функции с ID второго элемента
+        }
+    </script>
+</body>
+
+</html>
