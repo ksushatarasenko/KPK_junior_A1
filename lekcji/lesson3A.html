@@ -38,30 +38,30 @@
             </div>
             <div class="two">
                 <div class="question-set" id="set1">
-                    <div class="dialog italic ">
+                    <div class="dialog italic"  style="width: 100%;">
                         <div class="colors">
-                            <p class="p italic blue">a. plastyka</p>
+                            <p class="p italic blue flex">a. plastyka</p>
                         </div>
                         <div class="colors">
-                            <p class="p">b. <input type="text" data-answer="przyroda" class="line">.</p>
+                            <p class="p flex" style="width: 100%;">b. <input type="text" data-answer="przyroda" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">c. <input type="text" data-answer="język angelski" class="line">.</p>
+                            <p class="p flex">c. <input type="text" data-answer="język angelski" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">d. <input type="text" data-answer="matematyka" class="line">.</p>
+                            <p class="p flex">d. <input type="text" data-answer="matematyka" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">e. <input type="text" data-answer="historia" class="line">.</p>
+                            <p class="p flex">e. <input type="text" data-answer="historia" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">f. <input type="text" data-answer="język polski" class="line">.</p>
+                            <p class="p flex">f. <input type="text" data-answer="język polski" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">g. <input type="text" data-answer="informatyka" class="line">.</p>
+                            <p class="p flex">g. <input type="text" data-answer="informatyka" class="line"></p>
                         </div>
                         <div class="colors">
-                            <p class="p">h. <input type="text" data-answer="wychowanie fizyczne(WF)" class="line">.</p>
+                            <p class="p flex">h. <input type="text" data-answer="wychowanie fizyczne(WF)" class="line"></p>
                         </div>
                         <div class="colors">
                             <p class="p italic blue">i. muzyka</p>
@@ -69,7 +69,7 @@
                     </div>
                     <button onclick="checkAnswers('set1')">Check</button>
                 </div>
-                <div class="p">
+                <div class="p infoText">
                     <p>muzyka</p>
                     <p>język polski</p>
                     <p>język angelski</p>
@@ -77,7 +77,7 @@
                     <p>matematyka</p>
                     <p>historia</p>
                     <p>przyroda</p>
-                    <p>wychowanie fizyczne(WF)</p>
+                    <p style="width: 300px;">wychowanie fizyczne(WF)</p>
                     <p>informatyka</p>
                 </div>
             </div>
@@ -91,10 +91,10 @@
             <div class="question-set" id="set2">
                 <div class="dialog italic ">
                     <div class="colors">
-                        <p class="p italic "><span class="blue">1. Różowy</span> zeszyt to muzyka.</p>
+                        <p class="p italic" style="width: 100%;"><span class="blue">1. Różowy</span> zeszyt to muzyka.</p>
                     </div>
                     <div class="colors">
-                        <p class="p">2. <input type="text" data-answer="Czerwony" class="line"> zeszyt to język polski.
+                        <p class="p" style="width: 100%;">2. <input type="text" data-answer="Czerwony" class="line"> zeszyt to język polski.
                         </p>
                     </div>
                     <div class="colors">
@@ -164,53 +164,58 @@
             </div>
 
             <div class="question-set" id="set4">
-                <div class="dialog displayFlex">
-                    <div class="raspisanie">
-                        <p class="p">Poniedziałek</p>
-                        <p class="italic blue">1. język polski</p>
-                        <p>2. <input type="text" data-answer="historia" class="line_2"></p>
-                        <p class="italic blue">3. matematyka</p>
-                        <p>4. <input type="text" data-answer="WF" class="line_2"></p>
-                        <p>5.</p>
+                <div class="dialog">
+                    <div class="three">
+                        <div class="boxColumn">
+                            <p class="p">Poniedziałek</p>
+                            <p class="italic blue">1. język polski</p>
+                            <p>2. <input type="text" data-answer="historia" class="line_2"></p>
+                            <p class="italic blue">3. matematyka</p>
+                            <p>4. <input type="text" data-answer="WF" class="line_2"></p>
+                            <p>5.</p>
+                        </div>
+                        <div class="boxColumn">
+                            <p class="p">Wtorek</p>
+                            <p class="italic blue">1. język angelski</p>
+                            <p >2. <input type="text" data-answer="język polski" class="line_2"></p>
+                            <p >3. <input type="text" data-answer="muzyka" class="line_2"></p>
+                            <p >4. <input type="text" data-answer="matematyka" class="line_2"></p>
+                            <p >5. <input type="text" data-answer="przyroda" class="line_2"></p>
+                        </div>
+                        <div class="boxColumn">
+                            <p class="p">Środa</p>
+                            <p class="italic blue">1. matematyka</p>
+                            <p >2. <input type="text" data-answer="historia" class="line_2"></p>
+                            <p >3. <input type="text" data-answer="informatyka" class="line_2"></p>
+                            <p >4. <input type="text" data-answer="WF" class="line_2"></p>
+                            <p >5. -</p>
+                        </div>
                     </div>
-                    <div class="colors raspisanie">
-                        <p class="p">Wtorek</p>
-                        <p class="italic blue">1. język angelski</p>
-                        <p >2. <input type="text" data-answer="język polski" class="line_2"></p>
-                        <p >3. <input type="text" data-answer="muzyka" class="line_2"></p>
-                        <p >4. <input type="text" data-answer="matematyka" class="line_2"></p>
-                        <p >5. <input type="text" data-answer="przyroda" class="line_2"></p>
+                    <div class="two">
+                        <div class="boxColumn">
+                            <p class="p">Czwartek</p>
+                            <p class="italic blue">1. <input type="text" data-answer="język angelski" class="line_2"></p>
+                            <p >2. <input type="text" data-answer="przyroda" class="line_2"></p>
+                            <p >3. <input type="text" data-answer="język polski" class="line_2"></p>
+                            <p >4. <input type="text" data-answer="język polski" class="line_2"></p>
+                            <p >5. <input type="text" data-answer="plastyka" class="line_2"></p>
+                        </div>
+                        <div class="boxColumn">
+                            <p class="p">Piątek</p>
+                            <p class="italic blue">1. <input type="text" data-answer="język polski" class="line_2"></p>
+                            <p ><span class="blue italic">2. matematyka</span> </p>
+                            <p >3. <input type="text" data-answer="przyroda" class="line_2"></p>
+                            <p ><span class="blue italic">2. język angelski</span> </p>
+                            <p >5. <input type="text" data-answer="WF" class="line_2"></p>
+                        </div>
                     </div>
-                    <div class="colors raspisanie">
-                        <p class="p">Środa</p>
-                        <p class="italic blue">1. matematyka</p>
-                        <p >2. <input type="text" data-answer="historia" class="line_2"></p>
-                        <p >3. <input type="text" data-answer="informatyka" class="line_2"></p>
-                        <p >4. <input type="text" data-answer="WF" class="line_2"></p>
-                        <p >5. -</p>
-                    </div>
-                    <div class="colors raspisanie">
-                        <p class="p">Czwartek</p>
-                        <p class="italic blue">1. <input type="text" data-answer="język angelski" class="line_2"></p>
-                        <p >2. <input type="text" data-answer="przyroda" class="line_2"></p>
-                        <p >3. <input type="text" data-answer="język polski" class="line_2"></p>
-                        <p >4. <input type="text" data-answer="język polski" class="line_2"></p>
-                        <p >5. <input type="text" data-answer="plastyka" class="line_2"></p>
-                    </div>
-                    <div class="colors raspisanie">
-                        <p class="p">Piątek</p>
-                        <p class="italic blue">1. <input type="text" data-answer="język polski" class="line_2"></p>
-                        <p ><span class="blue italic">2. matematyka</span> </p>
-                        <p >3. <input type="text" data-answer="przyroda" class="line_2"></p>
-                        <p ><span class="blue italic">2. język angelski</span> </p>
-                        <p >5. <input type="text" data-answer="WF" class="line_2"></p>
-                    </div>
+                    
                 </div>
                 <button onclick="checkAnswers('set4')">Check</button>
             </div>
         <!-- 5 -->
         <h2>5. Jaki jest twój ulubiony przedmiot? Prosze napisać i zapytać kolegę. [503A5]</h2>
-        <div class="image">
+        <div class="image" style="width: 50%;">
             <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2131020&authkey=%21AGpE5gSSQZg_9dA&width=1950&height=1930" alt="503A5">
         </div>
         <!-- 6 -->

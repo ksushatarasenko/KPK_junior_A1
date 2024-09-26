@@ -1,12 +1,102 @@
-// функция кнопки ответ
+// // // Новая функция для проверки вариантов ответов и вызов checkAnswers:
+// function checkAll(setId) {
+//     // Вызов функции для проверки вписанных слов
+//     checkAnswers(setId);
 
+//     // Проверка вариантов с data-correct
+//     const set = document.getElementById(setId);
+//     const questions = set.querySelectorAll('.questionOption');
+    
+//     questions.forEach(question => {
+//         const correctIndex = question.getAttribute('data-correct');
+//         const selectedOption = question.querySelector('.selected');
+//         const selectedIndex = selectedOption ? selectedOption.getAttribute('data-index') : null;
+
+//         if (selectedIndex === correctIndex) {
+//             selectedOption.classList.add('correct');
+//             selectedOption.classList.remove('incorrect');
+//         } else if (selectedOption) {
+//             selectedOption.classList.add('incorrect');
+//             selectedOption.classList.remove('correct');
+//         }
+//     });
+// }
+
+
+// // Функция для проверки вписанных слов (checkAnswers):
+
+// function checkAnswers(setId) {
+//     const set = document.getElementById(setId);
+//     const inputs = set.querySelectorAll('input[data-answer]');
+//     inputs.forEach(input => {
+//         const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+//         const userAnswer = input.value.trim().toLowerCase();
+
+//         if (userAnswer === correctAnswer) {
+//             input.classList.add('correct');
+//             input.classList.remove('incorrect');
+//         } else {
+//             input.classList.add('incorrect');
+//             input.classList.remove('correct');
+//         }
+//     });
+// }
+
+
+// Обработчик клика для выбора варианта --------------------------------
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const questions = document.querySelectorAll('.questionOption');
+
+//     questions.forEach(question => {
+//         const options = question.querySelectorAll('.option');
+//         options.forEach(option => {
+//             option.addEventListener('click', () => {
+//                 options.forEach(opt => opt.classList.remove('selected'));
+//                 option.classList.add('selected');
+//             });
+//         });
+//     });
+// })
+
+
+// Универсальная функция для проверки всех типов вопросов
+function checkAll(setId) {
+    const set = document.getElementById(setId);
+
+    // Вызов функции для проверки вписанных слов, если есть input поля
+    checkAnswers(setId);
+
+    // Проверка вариантов с data-correct
+    const questions = set.querySelectorAll('.questionOption');
+
+    questions.forEach(question => {
+        const correctIndex = question.getAttribute('data-correct');
+        const selectedOption = question.querySelector('.selected');
+        const selectedIndex = selectedOption ? selectedOption.getAttribute('data-index') : null;
+
+        // Если вариант выбран, проверяем его корректность
+        if (selectedIndex !== null) {
+            if (selectedIndex === correctIndex) {
+                selectedOption.classList.add('correct');
+                selectedOption.classList.remove('incorrect');
+            } else {
+                selectedOption.classList.add('incorrect');
+                selectedOption.classList.remove('correct');
+            }
+        }
+    });
+}
+
+// Функция для проверки вписанных слов
 function checkAnswers(setId) {
     const set = document.getElementById(setId);
     const inputs = set.querySelectorAll('input[data-answer]');
+    
     inputs.forEach(input => {
         const correctAnswer = input.getAttribute('data-answer').toLowerCase();
         const userAnswer = input.value.trim().toLowerCase();
 
+        // Проверяем правильность ответа в input
         if (userAnswer === correctAnswer) {
             input.classList.add('correct');
             input.classList.remove('incorrect');
@@ -17,9 +107,9 @@ function checkAnswers(setId) {
     });
 }
 
-// выбор
+// Обработчик клика для выбора вариантов ответов
 document.addEventListener('DOMContentLoaded', (event) => {
-    const questions = document.querySelectorAll('.question');
+    const questions = document.querySelectorAll('.questionOption');
 
     questions.forEach(question => {
         const options = question.querySelectorAll('.option');
@@ -31,54 +121,65 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-// radio label
-                function checkRadio() {
-                    const correctAnswers = {
-                        question1: '1',
-                        question2: '1',
-                        question3: '3',
-                        question4: '3'
-                    };
+    // Обработчик клика для кнопок проверки
+    const checkButtons = document.querySelectorAll('.checkAnswersBtn');
 
-                    let allCorrect = true;
-
-                    for (const question in correctAnswers) {
-                        const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
-                        const taskElement = document.querySelector(`input[name="${question}"]`).closest('.task');
-
-                        if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
-                            taskElement.classList.add('correct');
-                            taskElement.classList.remove('incorrect');
-                        } else {
-                            taskElement.classList.add('incorrect');
-                            taskElement.classList.remove('correct');
-                            allCorrect = false;
-                        }
-                    }
-
-                    if (allCorrect) {
-                        alert("Все ответы верны!");
-                    } else {
-                        alert("Есть ошибки в ответах.");
-                    }
-
-                }
-
-    document.getElementById('checkAnswers').addEventListener('click', () => {
-        questions.forEach(question => {
-            const correctIndex = question.getAttribute('data-correct');
-            const selectedOption = question.querySelector('.option.selected');
-            if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
-                question.classList.add('correct');
-                question.classList.remove('incorrect');
-            } else {
-                question.classList.add('incorrect');
-                question.classList.remove('correct');
-            }
+    checkButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const setId = button.getAttribute('data-set-id');
+            checkAll(setId);  // Универсальный вызов для проверки конкретного набора вопросов
         });
     });
 });
-// кнопка для подсказки
+
+// Проверка радиокнопок ----------------------------------
+//                 function checkRadio() {
+//                     const correctAnswers = {
+//                         question1: '1',
+//                         question2: '1',
+//                         question3: '3',
+//                         question4: '3'
+//                     };
+
+//                     let allCorrect = true;
+
+//                     for (const question in correctAnswers) {
+//                         const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+//                         const taskElement = document.querySelector(`input[name="${question}"]`).closest('.task');
+
+//                         if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+//                             taskElement.classList.add('correct');
+//                             taskElement.classList.remove('incorrect');
+//                         } else {
+//                             taskElement.classList.add('incorrect');
+//                             taskElement.classList.remove('correct');
+//                             allCorrect = false;
+//                         }
+//                     }
+
+//                     if (allCorrect) {
+//                         alert("Все ответы верны!");
+//                     } else {
+//                         alert("Есть ошибки в ответах.");
+//                     }
+
+//                 }
+
+//     document.getElementById('checkAnswers').addEventListener('click', () => {
+//         questions.forEach(question => {
+//             const correctIndex = question.getAttribute('data-correct');
+//             const selectedOption = question.querySelector('.option.selected');
+//             if (selectedOption && selectedOption.getAttribute('data-index') == correctIndex) {
+//                 question.classList.add('correct');
+//                 question.classList.remove('incorrect');
+//             } else {
+//                 question.classList.add('incorrect');
+//                 question.classList.remove('correct');
+//             }
+//         });
+//     });
+// });
+// кнопка для подсказки --------------------------------------------
 function toggleHints(hintsId) {
     var hints = document.getElementById(hintsId);
     if (hints.style.display === "none") {
@@ -88,10 +189,7 @@ function toggleHints(hintsId) {
     }
 }
 
-// peretaskivanie fraz
-
-// Функция для проверки порядка диалогов
-// Правильный порядок диалога
+// Проверка порядка диалогов----------------------------------------
 const correctDialogs = {
     "dialog1": [
         "Dzień dobry. Czy jest czarny długopis?",
@@ -184,7 +282,7 @@ function getDragAfterElement(containerFraz, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-// Необходим скрипт, если вы хотите увеличить картинку при клике вместо наведения
+// Увеличение картинки при клике
 document.addEventListener('DOMContentLoaded', function () {
     var zoomableImages = document.querySelectorAll('.zoomable');
 
@@ -194,6 +292,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
 
  

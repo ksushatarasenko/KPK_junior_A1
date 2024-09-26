@@ -121,6 +121,9 @@ p{
 .p16{
    font-size: 16px;
 }
+.p24{
+   font-size: 24px;
+}
 .p28{
    font-size: 28px;
 }
@@ -241,6 +244,10 @@ p{
     margin-left: 10px;
     width: 20px;
     height: 20px;
+ }
+ .selected{
+   text-decoration: underline;
+   color: blue;
  }
  /* ======================== */
 /* .two{
@@ -589,6 +596,8 @@ label{
    height: 45px;
    border-radius: 50%;
    border: 3px solid rgb(160, 54, 160);
+   text-align: center;
+   background-color: white;
 }
 .dialog{
    width: 100%;
@@ -665,6 +674,7 @@ input {
 /* radio label */
 .task {
    margin-bottom: 10px;
+   padding: 1%;
 }
 .task img {
    display: block;
@@ -691,11 +701,15 @@ input {
 }
 
 /* ---------------- */
-.raspisanie{
+/* .raspisanie{
    display: flex;
    flex-direction: column;
    padding: 1%;
 
+} */
+.boxColumn{
+   display: flex;
+   flex-direction: column;
 }
 .displayFlex{
    display: flex;
