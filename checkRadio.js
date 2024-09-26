@@ -142,6 +142,12 @@ function checkRadio(taskId) {
             question8: '1',
             question9: '2'
         },
+        task510A9: {
+            question1: '3',
+            question2: '1',
+            question3: '3',
+            question4: '1'
+        },
         
     };
 

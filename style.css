@@ -172,7 +172,7 @@ p{
 
 /* FON */
 .niebieski{
-   background-color: rgb(240, 168, 92);
+   background-color: rgb(170, 224, 243);
    border-radius: 20px;
    padding: 3%;
 }
@@ -186,6 +186,36 @@ p{
    background-color: rgb(203, 242, 213);
    border-radius: 15px;
    padding: 2%;
+}
+.fonPink{
+   background-color: rgb(251, 217, 251);
+   border-radius: 20px;
+   padding: 3%;
+}
+.fonNiebieski{
+   background-color: rgb(182, 228, 245);
+   border-radius: 20px;
+   padding: 3%;
+}
+.oknoPink{
+   background-color: rgb(241, 84, 223);
+   border-radius: 10px;
+   padding: 5px;
+}
+.oknoBlue{
+   background-color: rgb(61, 128, 209);
+   border-radius: 10px;
+   padding: 5px;
+}
+.boxRight{
+   display: flex;
+   justify-content: space-between;
+}
+.flexColumn{
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
 }
 /* =========== List Lesson ============== */
  .liLesson a{
@@ -548,6 +578,12 @@ label{
 .line_7{
    width: 400px;
 }
+.kolo{
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   border: 3px solid rgb(160, 54, 160);
+}
 .dialog{
    width: 100%;
 }
@@ -644,6 +680,8 @@ input {
    text-align: right;
    display: flex;
    justify-content: flex-end;
+   gap: 15px;
+   text-align: center;
 }
 
 /* ---------------- */

@@ -245,3 +245,12 @@
                 <p>oni/one => rysują</p>
             </div>
         </div>
+
+<!-- SLOWA -->
+<p class="slowa"><span class="coral">regularnie</span> | <span class="coral">w ten piątek</span> | <span
+    class="coral">codziennie</span> | <span class="coral">teraz </span> | <span class="coral">w tę
+    sobotę</span> | <span class="coral">rzadko</span> | <span class="coral">za chwilę</span> | <span
+    class="coral">czasem</span> | <span class="coral">nigdy</span> | <span class="coral">jutro</span> |
+    <span class="coral">zaraz</span> | <span class="coral">często</span> | <span
+    class="coral">dzisiaj</span> | <span class="coral">zwykle</span> | <span class="coral">zawsze</span>
+</p>
