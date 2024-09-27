@@ -124,6 +124,9 @@ p{
 .p24{
    font-size: 24px;
 }
+.p26{
+   font-size: 26px;
+}
 .p28{
    font-size: 28px;
 }
@@ -566,7 +569,7 @@ label{
 }
 .line_1{
    width: 100px;
-   font-size: 20px;
+   font-size: 16px;
 }
 .line_2{
    width: 150px;
@@ -611,6 +614,7 @@ label{
    margin-top: 3px;
    align-items: flex-end;
 }
+
 button{
    background-color: aquamarine;
    font-size: 18px;
@@ -632,9 +636,9 @@ button{
 .options {
    display: flex;
    gap: 1px;
-   /* Разрыв между вариантами */
    font-size: 20px;
-   
+   justify-content: center;
+   align-items: center;
 }
 
 .option {
@@ -675,6 +679,8 @@ input {
 .task {
    margin-bottom: 10px;
    padding: 1%;
+   display: flex;
+   justify-content: space-evenly;
 }
 .task img {
    display: block;
@@ -682,13 +688,7 @@ input {
    width: 100%; /* Примерный размер, можете изменить */
    height: auto;
 }
-.options {
-   display: flex;
-   gap: 10px;
-   align-items: center;
-   justify-content: space-between;
-   
-}
+
 
 .boxRadio{
    margin-right: 1px;
@@ -761,4 +761,19 @@ input {
    color: white;
    border: none;
    cursor: pointer;
+}
+
+/* WIDTH */
+
+.wid50{
+   width: 50%;
+}
+.wid60{
+   width: 60%;
+}
+.wid70{
+   width: 70%;
+}
+.wid160{
+   width: 160%;
 }
