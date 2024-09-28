@@ -212,12 +212,17 @@ p{
 .oknoPink{
    background-color: rgb(241, 84, 223);
    border-radius: 10px;
-   padding: 5px;
+   padding: 3px;
 }
 .oknoBlue{
    background-color: rgb(61, 128, 209);
    border-radius: 10px;
    padding: 5px;
+}
+
+.fonLightGreen{
+   background-color: rgb(218, 244, 185);
+   padding: 0.8%;
 }
 .boxRight{
    display: flex;
