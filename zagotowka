@@ -289,3 +289,13 @@
     <span class="coral">zaraz</span> | <span class="coral">często</span> | <span
     class="coral">dzisiaj</span> | <span class="coral">zwykle</span> | <span class="coral">zawsze</span>
 </p>
+
+<!-- ///podskazkaOptima -->
+
+
+<div class="hint2-container" onclick="toggleHint2(this)">
+    <div class="hint2-header"></div>
+    <div class="hint2-content">
+        Число ділиться на 5, якщо воно закінчується на 0 або 5.
+    </div>
+</div>

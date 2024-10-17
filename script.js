@@ -293,4 +293,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// prowerka Optima
+
+function toggleHint2(element) {
+    element.classList.toggle('active');
+}
+
  

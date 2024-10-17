@@ -32,189 +32,224 @@
                 >>></a>
 
             <!-- 1 -->
-            <h2>1. Co to jest?</h2>
-            <div class="two">
-                <div>
-                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127171&authkey=%21AOKg-e5bU1eByXU&width=1590&height=1852"
-                        alt="502E1">
+            <div class="blockZadanie">
+                <h2>1. Co to jest?</h2>
+                <div class="two">
+                    <div>
+                        <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127171&authkey=%21AOKg-e5bU1eByXU&width=1590&height=1852"
+                            alt="502E1">
+                    </div>
+                    <div class="question-set question" id="set1">
+                        <div class="italic">
+                            <p class="p blue">a. słonce</p>
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">b. </p><input type="text" data-answer="niebo" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">c. </p><input type="text" data-answer="drzewo" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">d. </p><input type="text" data-answer="piłka" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">e. </p><input type="text" data-answer="rower" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">f. </p><input type="text" data-answer="ławka" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">g. </p><input type="text" data-answer="deskorolka" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">h. </p><input type="text" data-answer="kot" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">i. </p><input type="text" data-answer="pies" class="line_3">
+                        </div>
+                        <div class="italic colors">
+                            <p class="p">j. </p><input type="text" data-answer="kwiatek" class="line_3">
+                        </div>
+                        <button onclick="checkAnswers('set1')">Sprawdź</button>
+                    </div>
                 </div>
-                <div class="question-set question" id="set1">
-                    <div class="italic">
-                        <p class="p blue">a. słonce</p>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <p>a. słonce</p>
+                        <p>b. niebo</p>
+                        <p>c. drzewo</p>
+                        <p>d. piłka</p>
+                        <p>e. rower</p>
+                        <p>f. lawka</p>
+                        <p>g. deslorolka</p>
+                        <p>h. kot</p>
+                        <p>i. pies</p>
+                        <p>j. kwiatek</p>
                     </div>
-                    <div class="italic colors">
-                        <p class="p">b. </p><input type="text" data-answer="niebo" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">c. </p><input type="text" data-answer="drzewo" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">d. </p><input type="text" data-answer="piłka" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">e. </p><input type="text" data-answer="rower" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">f. </p><input type="text" data-answer="ławka" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">g. </p><input type="text" data-answer="deskorolka" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">h. </p><input type="text" data-answer="kot" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">i. </p><input type="text" data-answer="pies" class="line_3">
-                    </div>
-                    <div class="italic colors">
-                        <p class="p">j. </p><input type="text" data-answer="kwiatek" class="line_3">
-                    </div>
-                    <button onclick="checkAnswers('set1')">Sprawdź</button>
                 </div>
             </div>
+
             <!-- 2 -->
-            <h2>2. Proszę postuchać i uzupetnić. [502E2]</h2>
-            <div class="two">
-                <div class="question-set question" id="set2">
-                    <div style="width: 200px; height: 80px;">
-                        <iframe width="100%" height="100%" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/834629863&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    </div>
-                    <div class="italic">
-                        <p class="p22">To jest drzewo, to jest drzewo.</p>
-                    </div>
-                    <div class="italic colors">
-                        <p class="p22">Ono jest </p> <input type="text" data-answer="zielone" class="line_3">
-                    </div>
-                    <div class="italic">
-                        <p class="p22">To jest niebo, to jest niebo.</p>
-                    </div>
-                    <div class="italic colors">
-                        <p class="p22">Ono jest </p> <input type="text" data-answer="niebieskie" class="line_3">
-                    </div>
+            <div class="blockZadanie" style="width: 97%;">
+
+                <div class="two">
                     <div>
-                        <p class="p22">Piłka, rower, deskorolka</p>
-                        <p class="p22">I już ekstra jest!</p>
-                        <p class="p22">To jest trawa, to jest trawa.</p>
+                        <p class="p green">2. Proszę postuchać i uzupetnić. [502E2]</p>
+                        <div class="question-set question" id="set2">
+                            <div style="width: 200px; height: 80px;">
+                                <iframe width="100%" height="100%" scrolling="no" frameborder="no"
+                                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/834629863&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            </div>
+                            <div class="italic">
+                                <p class="p22">To jest drzewo, to jest drzewo.</p>
+                            </div>
+                            <div class="italic colors">
+                                <p class="p22">Ono jest </p> <input type="text" data-answer="zielone" class="line_3">
+                            </div>
+                            <div class="italic">
+                                <p class="p22">To jest niebo, to jest niebo.</p>
+                            </div>
+                            <div class="italic colors">
+                                <p class="p22">Ono jest </p> <input type="text" data-answer="niebieskie" class="line_3">
+                            </div>
+                            <div>
+                                <p class="p22">Piłka, rower, deskorolka</p>
+                                <p class="p22">I już ekstra jest!</p>
+                                <p class="p22">To jest trawa, to jest trawa.</p>
+                            </div>
+                            <div class="italic colors">
+                                <p class="p22">Ona jest </p> <input type="text" data-answer="zielona" class="line_3">
+                            </div>
+                            <div>
+                                <p class="p22">To jest ławka, to jest ławka</p>
+                            </div>
+                            <div class="italic colors">
+                                <p class="p22">Ona jest </p> <input type="text" data-answer="czerwona" class="line_3">
+                            </div>
+                            <div>
+                                <p class="p22">Piłka, rower, deskorolka</p>
+                                <p class="p22">I już ekstra jest!</p>
+                                <p class="p22">Kot jest mały, kot jest mały</p>
+                            </div>
+                            <div class="italic colors">
+                                <p class="p22">On jest</p> <input type="text" data-answer="szary" class="line_3">
+                            </div>
+                            <div>
+                                <p class="p22">Pies jest duży, pies jest duży.</p>
+                                <p class="p22">Zaraz wskoczy do kałuży.</p>
+                            </div>
+                            <button onclick="checkAnswers('set2')">Sprawdź</button>
+                        </div>
                     </div>
-                    <div class="italic colors">
-                        <p class="p22">Ona jest </p> <input type="text" data-answer="zielona" class="line_3">
-                    </div>
+                    <!-- 3 -->
                     <div>
-                        <p class="p22">To jest ławka, to jest ławka</p>
+                        <div class=".text20" id="task502E3" style="margin-left: 3%;">
+                            <p class="p green"> 3. Prawda (P) czy nieprawda (N)?</p>
+                            <div class="task">
+                                <p class="wid160">1. Słońce jest żółte.</p>
+                                <div class="options" style="width: 100%;">
+                                    <label><input type="radio" name="question1" value="1"> P</label>
+                                    <label><input type="radio" name="question1" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">2. Trawa jest niebieska.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question2" value="1"> P</label>
+                                    <label><input type="radio" name="question2" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">3. Niebo jest zielone.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question3" value="1"> P</label>
+                                    <label><input type="radio" name="question3" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">4. Tęcza jest kolorowa.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question4" value="1"> P</label>
+                                    <label><input type="radio" name="question4" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p>
+                                <p class="wid160">5. Chmura jest czarna.</p>
+                                </p>
+                                <div class="options">
+                                    <label><input type="radio" name="question5" value="1"> P</label>
+                                    <label><input type="radio" name="question5" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">6. Ławka jest brązowa.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question6" value="1"> P</label>
+                                    <label><input type="radio" name="question6" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">7. Pies jest biały.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question7" value="1"> P</label>
+                                    <label><input type="radio" name="question7" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">8. Kot jest szary.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question8" value="1"> P</label>
+                                    <label><input type="radio" name="question8" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">9. Latawiec jest zielony.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question9" value="1"> P</label>
+                                    <label><input type="radio" name="question9" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">10. Piłka jest pomarańczowa.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question10" value="1"> P</label>
+                                    <label><input type="radio" name="question10" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">11. Ptak jest czarny.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question11" value="1"> P</label>
+                                    <label><input type="radio" name="question11" value="2"> N</label>
+                                </div>
+                            </div>
+                            <div class="task">
+                                <p class="wid160">12. Deskorolka jest biała.</p>
+                                <div class="options">
+                                    <label><input type="radio" name="question12" value="1"> P</label>
+                                    <label><input type="radio" name="question12" value="2"> N</label>
+                                </div>
+                            </div>
+                            <button onclick="checkRadio('task502E3')">Chek</button>
+                        </div>
                     </div>
-                    <div class="italic colors">
-                        <p class="p22">Ona jest </p> <input type="text" data-answer="czerwona" class="line_3">
-                    </div>
-                    <div>
-                        <p class="p22">Piłka, rower, deskorolka</p>
-                        <p class="p22">I już ekstra jest!</p>
-                        <p class="p22">Kot jest mały, kot jest mały</p>
-                    </div>
-                    <div class="italic colors">
-                        <p class="p22">On jest</p> <input type="text" data-answer="szary" class="line_3">
-                    </div>
-                    <div>
-                        <p class="p22">Pies jest duży, pies jest duży.</p>
-                        <p class="p22">Zaraz wskoczy do kałuży.</p>
-                    </div>
-                    <button onclick="checkAnswers('set2')">Sprawdź</button>
                 </div>
-                <!-- 3 -->
-                <div class=".text20" id="task502E3" style="margin-left: 15%;">
-                    <p class="p green"> 3. Prawda (P) czy nieprawda (N)?</p>
-                    <div class="task">
-                        <p class="wid160">1. Słońce jest żółte.</p>
-                        <div class="options" style="width: 100%;">
-                            <label><input type="radio" name="question1" value="1"> P</label>
-                            <label><input type="radio" name="question1" value="2"> N</label>
-                        </div>
+                <div class="hint2-container" onclick="toggleHint2(this)">
+                    <div class="hint2-header"></div>
+                    <div class="hint2-content">
+                        <p>To jest drzewo, to jest drzewo. Ono jest <b>zielone</b>.</p>
+                        <p>To jest niebo, to jest niebo. Ono jest <b>niebieskie</b>.</p>
+                        <p>To jest trawa, to jest trawa. Ona jest <b>zielona</b>.</p>
+                        <p>To jest ławka, to jest ławka. Ona jest <b>czerwona</b>.</p>
+                        <p>Kot jest mały, kot jest mały. On jest <b>szary</b>.</p>
                     </div>
-                    <div class="task">
-                        <p class="wid160">2. Trawa jest niebieska.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question2" value="1"> P</label>
-                            <label><input type="radio" name="question2" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p class="wid160">3. Niebo jest zielone.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question3" value="1"> P</label>
-                            <label><input type="radio" name="question3" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p class="wid160">4. Tęcza jest kolorowa.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question4" value="1"> P</label>
-                            <label><input type="radio" name="question4" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p>
-                        <p class="wid160">5. Chmura jest czarna.</p>
-                        </p>
-                        <div class="options">
-                            <label><input type="radio" name="question5" value="1"> P</label>
-                            <label><input type="radio" name="question5" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p class="wid160">6. Ławka jest brązowa.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question6" value="1"> P</label>
-                            <label><input type="radio" name="question6" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p class="wid160">7. Pies jest biały.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question7" value="1"> P</label>
-                            <label><input type="radio" name="question7" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p  class="wid160">8. Kot jest szary.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question8" value="1"> P</label>
-                            <label><input type="radio" name="question8" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p  class="wid160">9. Latawiec jest zielony.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question9" value="1"> P</label>
-                            <label><input type="radio" name="question9" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p  class="wid160">10. Piłka jest pomarańczowa.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question10" value="1"> P</label>
-                            <label><input type="radio" name="question10" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p  class="wid160">11. Ptak jest czarny.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question11" value="1"> P</label>
-                            <label><input type="radio" name="question11" value="2"> N</label>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <p  class="wid160">12. Deskorolka jest biała.</p>
-                        <div class="options">
-                            <label><input type="radio" name="question12" value="1"> P</label>
-                            <label><input type="radio" name="question12" value="2"> N</label>
-                        </div>
-                    </div>
-                    <button onclick="checkRadio('task502E3')">Chek</button>
                 </div>
             </div>
-            <!-- 4 -->
 
             <!-- 6 -->
+            
             <h2>6. Proszę połączyć zdania. </h2>
             <div class="video">
                 <iframe style="max-width:100%"
@@ -223,14 +258,21 @@
             </div>
             <!--  -->
             <div class="video">
-                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/386a3985d220434fb176f4a47f0bc92e?themeId=1&templateId=38&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/386a3985d220434fb176f4a47f0bc92e?themeId=1&templateId=38&fontStackId=0"
+                    width="500" height="380" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video">
-                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/bf19e932878c4553aacd2d6022bf48e8?themeId=46&templateId=2&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+                <iframe style="max-width:100%"
+                    src="https://wordwall.net/uk/embed/bf19e932878c4553aacd2d6022bf48e8?themeId=46&templateId=2&fontStackId=0"
+                    width="500" height="380" frameborder="0" allowfullscreen></iframe>
             </div>
             <h2>Piosenka z głoską “s" </h2>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dj6qK-xI6tY?si=o9NObvWPnEKmNjzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dj6qK-xI6tY?si=o9NObvWPnEKmNjzs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </main>
